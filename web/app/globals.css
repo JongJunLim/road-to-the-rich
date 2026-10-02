@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+/*
+ * 디자인 토큰 — 색은 전부 여기서만 정의하고 역할 이름으로 쓴다.
+ * 차트 색은 검증된 categorical 순서(blue → orange → aqua → yellow)를 따르고,
+ * 같은 대상은 어느 차트에서든 같은 색(수입=파랑, 지출=주황 …)을 유지한다.
+ */
+:root {
+  color-scheme: light;
+  --page: #f5f5f2;
+  --surface: #fcfcfb;
+  --surface-sunken: #f0efec;
+  --border: rgba(11, 11, 11, 0.08);
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --grid: #e7e6e0;
+  --axis: #c3c2b7;
+
+  --series-1: #2a78d6; /* 자산 · 원금 · 수입 */
+  --series-2: #eb6834; /* 평가금 · 지출 */
+  --series-3: #1baf7a; /* 이체(수입) */
+  --series-4: #eda100; /* 이체(지출) */
+  --series-1-wash: rgba(42, 120, 214, 0.1);
+
+  /* 증감 표시: 사용자 Tableau 규칙 그대로 — 좋은 방향 파랑, 나쁜 방향 빨강 (+ ▲▼ 아이콘) */
+  --delta-good: #1c5cab;
+  --delta-bad: #d03b3b;
+  --delta-flat: #898781;
+
+  --accent: #0b0b0b;
+  --shadow: 0 1px 2px rgba(11, 11, 11, 0.04), 0 4px 16px rgba(11, 11, 11, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --surface-sunken: #232322;
+    --border: rgba(255, 255, 255, 0.09);
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #898781;
+    --grid: #2c2c2a;
+    --axis: #383835;
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --series-4: #c98500;
+    --series-1-wash: rgba(57, 135, 229, 0.14);
+    --delta-good: #6da7ec;
+    --delta-bad: #e66767;
+    --accent: #ffffff;
+    --shadow: none;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d;
+  --surface: #1a1a19;
+  --surface-sunken: #232322;
+  --border: rgba(255, 255, 255, 0.09);
+  --text-primary: #ffffff;
+  --text-secondary: #c3c2b7;
+  --text-muted: #898781;
+  --grid: #2c2c2a;
+  --axis: #383835;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-1-wash: rgba(57, 135, 229, 0.14);
+  --delta-good: #6da7ec;
+  --delta-bad: #e66767;
+  --accent: #ffffff;
+  --shadow: none;
+}
+
+@theme inline {
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-sunken: var(--surface-sunken);
+  --color-line: var(--border);
+  --color-ink: var(--text-primary);
+  --color-ink-2: var(--text-secondary);
+  --color-ink-3: var(--text-muted);
+  --color-good: var(--delta-good);
+  --color-bad: var(--delta-bad);
+  --font-sans: "Pretendard Variable", Pretendard, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html,
+body {
+  background: var(--page);
+  color: var(--text-primary);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* 포커스 링은 키보드 사용 시에만 */
+:focus-visible {
+  outline: 2px solid var(--series-1);
+  outline-offset: 2px;
+  border-radius: 8px;
+}

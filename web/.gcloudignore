@@ -1,0 +1,12 @@
+# gcloud run deploy --source 시 업로드에서 제외 (용량 + 실데이터·설정 파일 보호)
+.gcloudignore
+node_modules/
+.next/
+.next-real/
+.private/
+.env*
+!.env.example
+deploy/*.env.yaml
+*.tsbuildinfo
+AGENTS.md
+CLAUDE.md

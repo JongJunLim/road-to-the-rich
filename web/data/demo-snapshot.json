@@ -1,0 +1,5492 @@
+{
+ "version": 2,
+ "source": "demo",
+ "generated_at": "2026-09-28T16:40:09+09:00",
+ "data_updated_at": "2026-09-01T09:00:00",
+ "owners": [
+  {
+   "id": "bbang",
+   "label": "빵준"
+  },
+  {
+   "id": "bbyak",
+   "label": "또용"
+  }
+ ],
+ "asset": [
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "asset": 63838443
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "asset": 66034989
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "asset": 66370253
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "asset": 67595578
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "asset": 69622696
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "asset": 71666168
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "asset": 73160040
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "asset": 74240930
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "asset": 74829308
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "asset": 77056968
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "asset": 78368306
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "asset": 78803015
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "asset": 80037663
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "asset": 81444937
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "asset": 81718653
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "asset": 83099419
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "asset": 84781533
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "asset": 84902460
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "asset": 86541117
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "asset": 84146112
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "asset": 84409466
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "asset": 85330764
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "asset": 85878189
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbang",
+   "asset": 84711940
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "asset": 42052718
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "asset": 43268467
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "asset": 44006822
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "asset": 44483875
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "asset": 44125264
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "asset": 44308989
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "asset": 44472040
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "asset": 44128009
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "asset": 44242916
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "asset": 45841144
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "asset": 47245765
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "asset": 47979867
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "asset": 49873184
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "asset": 51428939
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "asset": 52150658
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "asset": 53704456
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "asset": 54119791
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "asset": 53812770
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "asset": 54079849
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "asset": 50995315
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "asset": 50613764
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "asset": 52039115
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "asset": 52686501
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbyak",
+   "asset": 50664531
+  }
+ ],
+ "investment": [
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "principal": 19000000,
+   "valuation": 19712000
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "principal": 19500000,
+   "valuation": 20668000
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "principal": 20500000,
+   "valuation": 21962000
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "principal": 21500000,
+   "valuation": 23112000
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "principal": 22000000,
+   "valuation": 23824000
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "principal": 23000000,
+   "valuation": 25165000
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "principal": 24000000,
+   "valuation": 25611000
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "principal": 24700000,
+   "valuation": 26289000
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "principal": 25200000,
+   "valuation": 26583000
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "principal": 25700000,
+   "valuation": 27388000
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "principal": 26200000,
+   "valuation": 28334000
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "principal": 26900000,
+   "valuation": 28419000
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "principal": 27900000,
+   "valuation": 29532000
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "principal": 28600000,
+   "valuation": 31251000
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "principal": 29600000,
+   "valuation": 31701000
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "principal": 30600000,
+   "valuation": 33230000
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "principal": 31600000,
+   "valuation": 34629000
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "principal": 32100000,
+   "valuation": 36236000
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "principal": 300000,
+   "valuation": 332000
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "principal": 400000,
+   "valuation": 444000
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "principal": 500000,
+   "valuation": 544000
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "principal": 600000,
+   "valuation": 650000
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "principal": 700000,
+   "valuation": 747000
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbang",
+   "principal": 800000,
+   "valuation": 861000
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "principal": 9700000,
+   "valuation": 9933000
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "principal": 10200000,
+   "valuation": 10162000
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "principal": 11200000,
+   "valuation": 10955000
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "principal": 11900000,
+   "valuation": 12345000
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "principal": 12900000,
+   "valuation": 13707000
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "principal": 13600000,
+   "valuation": 14656000
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "principal": 14100000,
+   "valuation": 15134000
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "principal": 14800000,
+   "valuation": 15837000
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "principal": 15500000,
+   "valuation": 16600000
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "principal": 16500000,
+   "valuation": 17727000
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "principal": 17500000,
+   "valuation": 18835000
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "principal": 18200000,
+   "valuation": 19936000
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "principal": 18700000,
+   "valuation": 20840000
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "principal": 19700000,
+   "valuation": 22382000
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "principal": 20400000,
+   "valuation": 22970000
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "principal": 300000,
+   "valuation": 343000
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "principal": 400000,
+   "valuation": 472000
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "principal": 500000,
+   "valuation": 582000
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "principal": 600000,
+   "valuation": 699000
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "principal": 700000,
+   "valuation": 829000
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "principal": 800000,
+   "valuation": 975000
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "principal": 900000,
+   "valuation": 1064000
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "principal": 1000000,
+   "valuation": 1153000
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbyak",
+   "principal": 1100000,
+   "valuation": 1281000
+  }
+ ],
+ "ledger": [
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3508704
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 18140
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "기타수입",
+   "amount": 131071
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 631618
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 135398
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 326935
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 186605
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 82884
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 78354
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 146356
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 189674
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1089706
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 227576
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1049308
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 880216
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 357141
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3400716
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 6072
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 536215
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 251498
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 245114
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 160024
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 80064
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 167743
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 78173
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 179066
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1131360
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 616662
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 737557
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 630194
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 372192
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3463304
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 11465
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 567514
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 188426
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 303600
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 227463
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 115338
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 92957
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 161125
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 242062
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1145459
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 304105
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 864150
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 629564
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 101298
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3480649
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "상여금",
+   "amount": 4098159
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 24382
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 523196
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 143877
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 286062
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 191000
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 90552
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 91095
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 98904
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 131263
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1348850
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 653460
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1426644
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 781636
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 295442
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3396438
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 10986
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 647618
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 166228
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 206101
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 158083
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 59671
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 142263
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 137810
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 248830
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 885977
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 175456
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1193776
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 901663
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 166051
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3453819
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 16345
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 698428
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 252885
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 299492
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 175554
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 82727
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 136482
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 98861
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 237544
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 796635
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 248743
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 657623
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 582257
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 321569
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3462205
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 3158
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 336491
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 137323
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 162534
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 129651
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 91019
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 98734
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 108716
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 185650
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1095688
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 629430
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1118590
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 658834
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 289189
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3437174
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 5075
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 514514
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 218473
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 375959
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 108081
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 113175
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 150117
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 79894
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 238406
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1180652
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 165561
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 772431
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 760019
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 156073
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3406321
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 13178
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 343360
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 261748
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 334041
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 101749
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 100954
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 123896
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 67299
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 121430
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1128922
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 241828
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 965773
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 741069
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 445860
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3505537
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "상여금",
+   "amount": 3332199
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 3047
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 697432
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 257902
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 215332
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 173591
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 106596
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 147203
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 124245
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 178081
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 508888
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 230621
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 652635
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 828829
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 124383
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3424277
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 4103
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 694465
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 215229
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 167831
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 150939
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 115297
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 78578
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 71981
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 232102
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 744153
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 664958
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1112708
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 774727
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 115897
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3392314
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 17462
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 443610
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 169809
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 295303
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 127702
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 73124
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 84564
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 122804
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 173840
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1321920
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 661441
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 608384
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 789300
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 325197
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3394797
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 14828
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 367102
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 184633
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 170309
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 119314
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 74519
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 114066
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 113803
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 151562
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1382239
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 584260
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1076047
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 805413
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 321841
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3509582
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 5279
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 422018
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 275472
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 310423
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 108654
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 74286
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 92220
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 96173
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 207000
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1238204
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 403245
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 826009
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 888315
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 120320
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3468531
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 21246
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "기타수입",
+   "amount": 133389
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 410391
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 325479
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 212362
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 160183
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 117385
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 140949
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 84946
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 273378
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1060122
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 189433
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 632425
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 702380
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 321010
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3440311
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "상여금",
+   "amount": 3162724
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 11022
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 716434
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 132702
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 230424
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 171848
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 102019
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 105953
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 115270
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 233959
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1371221
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 549687
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1433187
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 656674
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 165001
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3491384
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 6895
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 386614
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 281314
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 318736
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 139406
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 102233
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 142566
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 87839
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 130924
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1071406
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 329525
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 634852
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 737388
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 179829
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3507746
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 10692
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 674470
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 163451
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 293287
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 137816
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 74059
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 78664
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 134053
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 158565
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 860346
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 507711
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1359295
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 689247
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 111040
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3502031
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 8747
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 721157
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 132427
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 280087
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 131482
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 110623
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 113894
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 152613
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 124653
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1289455
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 214047
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 639948
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 725440
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 307968
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3492299
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 18111
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 692841
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 178194
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 275195
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 228329
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 134731
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 147642
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 139303
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 141060
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "결혼",
+   "amount": 5200000
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1290052
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 404274
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1200204
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 687533
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 378883
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3457509
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 7220
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 469724
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 251687
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 192198
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 158293
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 83237
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 152038
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 92741
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 138266
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1164335
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 463997
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 890024
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 727416
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 370251
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3451542
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "상여금",
+   "amount": 4200355
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 24116
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 586082
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 173676
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 294082
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 164311
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 60724
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 163392
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 86668
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 152700
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1187219
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 188412
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 641592
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 914458
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 344510
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3487052
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 13019
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 551479
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 246682
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 235868
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 137958
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 64625
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 138012
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 144554
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 231903
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1274012
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 567052
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 796957
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 852418
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 378365
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2923860
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 10395
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 480196
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 153728
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 253217
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 105315
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 98803
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 74589
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 100674
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 189272
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 329812
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 485650
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 722130
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 574659
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 120114
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2965589
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 7657
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 628672
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 189693
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 312418
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 189831
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 72164
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 79863
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 67706
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 185676
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1399899
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 309976
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1185130
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 660933
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 360702
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3010305
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 23891
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "기타수입",
+   "amount": 55095
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 420438
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 164870
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 330677
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 176598
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 78057
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 155846
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 149505
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 148021
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 967972
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 548755
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 703080
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 671211
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 485888
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2933285
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "상여금",
+   "amount": 2712609
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 9863
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 710600
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 192638
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 304723
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 99120
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 103724
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 132215
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 74967
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 219237
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1235323
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 460247
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 708950
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 715638
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 413054
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2961787
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 12424
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 522480
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 183327
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 332712
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 188680
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 61599
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 164236
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 121931
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 227334
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1078040
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 361292
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1260416
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 710678
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 208033
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3016737
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 14840
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 493199
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 248812
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 211826
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 192206
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 113813
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 80320
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 143584
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 143116
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 811179
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 466199
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 941090
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 457749
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 440381
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2942075
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 7667
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 453581
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 273894
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 301846
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 123152
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 54731
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 163014
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 73534
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 211691
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 837436
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 554899
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1221548
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 624394
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 296329
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3014918
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 5047
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "기타수입",
+   "amount": 222947
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 492108
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 250545
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 284971
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 172156
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 94793
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 160843
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 106523
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 234316
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 598008
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 250842
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 708590
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 501998
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 147822
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2984275
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 19768
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "기타수입",
+   "amount": 104096
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 513427
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 247730
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 359134
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 152956
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 74376
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 81651
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 83082
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 140758
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 497386
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 108489
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1080722
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 524064
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 489718
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2986360
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "상여금",
+   "amount": 3513322
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 5778
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 516206
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 272617
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 275405
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 146328
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 85714
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 89699
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 70521
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 243513
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 825502
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 593269
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 960637
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 470002
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 351778
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2926790
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 6282
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 438396
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 292978
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 180638
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 181733
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 97655
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 147911
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 85860
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 183250
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 795566
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 365633
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1374150
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 717308
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 222152
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2994426
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 16412
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 706198
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 160908
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 199893
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 169251
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 65308
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 88686
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 72606
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 108385
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 795554
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 456287
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 862133
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 512499
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 382782
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3004196
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 12989
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 696347
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 258355
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 286012
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 169342
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 121224
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 112813
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 113921
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 201259
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1299253
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 595979
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 664269
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 494799
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 223045
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3009676
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 15523
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 363731
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 241698
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 301545
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 203121
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 90034
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 119404
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 73079
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 113740
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 775232
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 293393
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 825331
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 474658
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 484764
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3020046
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 15654
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 815161
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 267617
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 237505
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 106207
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 121466
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 131228
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 138133
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 268704
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 499638
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 451198
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1171306
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 582766
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 136497
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2961877
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "상여금",
+   "amount": 3079304
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 17743
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 449198
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 242537
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 215949
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 203423
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 112577
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 124809
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 106025
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 153290
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 655601
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 682111
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 963758
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 588941
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 495248
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2998793
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 14937
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 390034
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 186779
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 313340
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 165049
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 108719
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 91542
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 114331
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 241585
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 781928
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 518950
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 709283
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 712750
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 343549
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2948924
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 6484
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 541737
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 141659
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 362389
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 199552
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 87224
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 83277
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 139229
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 179766
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1088264
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 405323
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 846082
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 675375
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 492098
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2949453
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 15128
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 695497
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 211384
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 338900
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 193683
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 73890
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 147841
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 102515
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 242532
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 858511
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 592330
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 854555
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 530610
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 334775
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3039469
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 13772
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "기타수입",
+   "amount": 184645
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 510240
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 244969
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 301317
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 161998
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 86428
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 100924
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 142665
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 213180
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "결혼",
+   "amount": 3100000
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 556919
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 565327
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 639283
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 651070
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 382091
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 3017120
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 11494
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 653431
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 290777
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 259028
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 94442
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 90165
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 128657
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 142534
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 233883
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 784337
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 415571
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1011235
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 645060
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 263991
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2998450
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "상여금",
+   "amount": 2865999
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 13329
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 452841
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 242374
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 291166
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 192212
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 115369
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 154497
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 99441
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 153599
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 1090589
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 555641
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 1385145
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 459693
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 127368
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "급여",
+   "amount": 2995634
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "income",
+   "category": "금융수입",
+   "amount": 23260
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "식비",
+   "amount": 622655
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "생활",
+   "amount": 198907
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "온라인쇼핑",
+   "amount": 176476
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "교통",
+   "amount": 166050
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "카페/간식",
+   "amount": 116826
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "주거/통신",
+   "amount": 114593
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "문화/여가",
+   "amount": 127072
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "expense",
+   "category": "여행/숙박",
+   "amount": 238093
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "내계좌이체",
+   "amount": 350590
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "transfer_in",
+   "category": "이체",
+   "amount": 577686
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "카드대금",
+   "amount": 864031
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "저축",
+   "amount": 551207
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "kind": "transfer_out",
+   "category": "투자",
+   "amount": 158228
+  }
+ ]
+}

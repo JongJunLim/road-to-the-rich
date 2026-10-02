@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.next-real/
+.env*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+__pycache__/
+# 실데이터 스냅샷은 절대 커밋하지 않는다 (데모 파일만 허용)
+latest.json
+*service-account*.json
+
+# 로컬 실데이터 스냅샷 (npm run data:real) — 절대 커밋·배포 금지
+.private/
+
+# 배포용 환경변수 파일 (허용 이메일 포함)
+web/deploy/*.env.yaml
