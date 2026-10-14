@@ -2,7 +2,9 @@
 //
 //   npm run data:real            GCS 에서 받기 (기본, 권장)
 //                                 = 매월 rttr-publish Job 이 만든 운영용 파일과 똑같은 데이터
-//   npm run data:real -- bq      BigQuery 에서 직접 생성 (Python 필요, 회사망 등 SSL 검사 환경에선 실패할 수 있음)
+//   npm run data:real -- bq      BigQuery 에서 직접 생성 (Python 필요)
+//                                 → 새 SQL(예: 화면 2)을 운영 반영 전에 로컬에서 확인할 때 사용
+//                                 → 회사망 SSL 검사 환경이면 먼저 pip install truststore
 //   npm run data:real -- bq dev  BigQuery dev 테이블에서 생성
 //
 // GCS 위치는 .env.local 의 SNAPSHOT_GCS_URI 로 바꿀 수 있음
@@ -31,6 +33,7 @@ if (mode !== "bq") {
   // ---------- 기본: GCS 에서 다운로드 (gcloud 사용) ----------
   console.log(`▶ gcloud storage cp ${GCS_URI} ${OUT}`);
   const run = spawnSync("gcloud", ["storage", "cp", GCS_URI, OUT], { stdio: "inherit", shell: true });
+  if (run.status === 0) console.log("   ℹ 운영 스냅샷입니다. 아직 운영에 반영하지 않은 SQL(예: 화면 2)은 npm run data:real -- bq 로 확인하세요.");
   done(run.status, [
     "'gcloud' 명령을 찾을 수 없음 → Google Cloud CLI 설치 후 터미널 재시작",
     "권한 오류(403) → gcloud auth login 으로 프로젝트 소유자 계정 로그인",
@@ -47,7 +50,7 @@ if (mode !== "bq") {
     done(run.status, [
       "'No module named google' → pip install -r ../pipeline/requirements.txt",
       "인증 오류(DefaultCredentialsError) → gcloud auth application-default login",
-      "CERTIFICATE_VERIFY_FAILED → 회사망 SSL 검사 때문. 기본 모드(npm run data:real)를 쓰거나 pip install pip-system-certs",
+      "CERTIFICATE_VERIFY_FAILED → 회사망 SSL 검사 때문. pip install truststore 후 다시 실행 (Windows 인증서 저장소 사용)",
     ]);
   }
   console.error("❌ Python 을 찾지 못했습니다.");

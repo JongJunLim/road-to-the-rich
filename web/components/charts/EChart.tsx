@@ -40,6 +40,12 @@ export interface ThemeTokens {
   s1Wash: string;
   good: string;
   bad: string;
+  // 화면 2 (Year End) 지표 색
+  yeGross: string;
+  yeNet: string;
+  yeCard: string;
+  yeCredit: string;
+  yeDebit: string;
 }
 
 function readTokens(): ThemeTokens {
@@ -59,6 +65,11 @@ function readTokens(): ThemeTokens {
     s1Wash: v("--series-1-wash"),
     good: v("--delta-good"),
     bad: v("--delta-bad"),
+    yeGross: v("--ye-gross"),
+    yeNet: v("--ye-net"),
+    yeCard: v("--ye-card"),
+    yeCredit: v("--ye-credit"),
+    yeDebit: v("--ye-debit"),
   };
 }
 

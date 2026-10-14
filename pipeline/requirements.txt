@@ -1,2 +1,3 @@
 google-cloud-bigquery>=3.25
 google-cloud-storage>=2.18
+# (선택, 로컬 전용) 회사망 SSL 검사 환경: pip install truststore  — Cloud Run 에는 불필요

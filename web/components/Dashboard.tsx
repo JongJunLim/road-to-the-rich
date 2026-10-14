@@ -15,6 +15,7 @@ import {
 } from "@/lib/metrics";
 import { formatMonthLong, formatPct, formatWon } from "@/lib/format";
 import KpiCard, { DeltaText } from "./KpiCard";
+import AppNav from "./AppNav";
 import ChartCard, { LegendItem } from "./ChartCard";
 import CategoryFilter, { summarizeGroup } from "./CategoryFilter";
 import { useThemeTokens } from "./charts/EChart";
@@ -113,6 +114,7 @@ export default function Dashboard({
 
   return (
     <main className="mx-auto w-full max-w-[1440px] px-4 pb-16 pt-6 sm:px-6 lg:px-8">
+      <AppNav />
       {/* ---------- 헤더 ---------- */}
       <header className="flex flex-wrap items-start justify-between gap-3">
         <div>

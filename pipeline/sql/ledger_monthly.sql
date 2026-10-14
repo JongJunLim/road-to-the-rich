@@ -4,6 +4,7 @@
 -- kind 규칙
 --   income       : txn_type = '수입'
 --   expense      : txn_type = '지출'  → 원천은 지출이 음수, 환불이 양수라서 -SUM(amount) 로 양수화
+--                  단, 2021-08 ~ 2025-01 은 결제수단 없이 월 합계 1행이 '양수'로 적재되어 있어 그대로 사용
 --   transfer_in  : txn_type = '이체' AND amount > 0   (KPI 정의서의 '이체(수입)')
 --   transfer_out : txn_type = '이체' AND amount < 0   (KPI 정의서의 '이체(지출)', 양수로 저장)
 SELECT
@@ -17,7 +18,13 @@ SELECT
   END                                                AS kind,
   COALESCE(NULLIF(TRIM(category_main), ''), '미분류') AS category,
   -- 지출·이체(지출)은 부호를 뒤집어 모두 양수로 저장
-  SUM(IF(txn_type = '지출' OR (txn_type = '이체' AND amount < 0), -amount, amount)) AS amount
+  SUM(
+    CASE
+      WHEN txn_type = '지출' AND NULLIF(TRIM(payment_method), '') IS NULL AND txn_date <= DATE '2025-01-31' THEN ABS(amount)
+      WHEN txn_type = '지출' OR (txn_type = '이체' AND amount < 0) THEN -amount
+      ELSE amount
+    END
+  ) AS amount
 FROM `{project}.{dataset}.{prefix}ledger_detail`
 WHERE txn_date IS NOT NULL
   AND owner IS NOT NULL
