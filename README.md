@@ -13,13 +13,23 @@ BigQuery PRD ──(export_snapshot.py)──▶ GCS 비공개 버킷 latest.jso
 
 | 경로 | 역할 |
 |---|---|
-| `pipeline/sql/*.sql` | KPI 정의서 기반 월별 마트 쿼리 (asset / investment / ledger) |
+| `pipeline/sql/*.sql` | KPI 정의서 기반 마트 쿼리 — 화면 1: asset / investment / ledger, 화면 2: year_end_monthly / year_end_annual |
 | `pipeline/export_snapshot.py` | 마트 → 스냅샷 JSON (로컬 파일 또는 GCS 업로드) |
 | `pipeline/generate_demo.py` | 합성 데이터 생성 (실데이터와 동일 스키마) |
 | `web/lib/schema.ts` | 📌 **데이터 계약 v2** — 파이프라인과 웹앱의 유일한 약속 (가계부는 월×owner×구분×대분류 행) |
-| `web/lib/metrics.ts` | KPI 계산 (MoM, 수익률, Owner 합산, 가계부 기준월, 카테고리 필터) |
-| `web/lib/metrics.test.ts` | KPI·필터 규칙 회귀 테스트 (`npm test`) |
+| `web/lib/metrics.ts` | 화면 1 KPI 계산 (MoM, 수익률, Owner 합산, 가계부 기준월, 카테고리 필터) |
+| `web/lib/yearEnd.ts` | 화면 2 KPI 계산 (전년 동기 YoY, 원천징수영수증 대체, 카드 누적) |
+| `web/lib/*.test.ts` | KPI·필터 규칙 회귀 테스트 (`npm test`) |
 | `web/components/` | KPI 카드, 차트 카드, ECharts 차트 3종 |
+
+## 화면
+
+| 경로 | 화면 | 데이터 |
+|---|---|---|
+| `/` | Road To The Rich — 자산 · 투자 · 가계부 | asset / investment / ledger |
+| `/year-end` | Year End Tax Settlement — 급여 · 실수령 · 세금 · 카드 지출 | year_end_monthly / year_end_annual (스냅샷 v3) |
+
+> 웹은 v2·v3 스냅샷을 모두 읽습니다. 운영 스냅샷이 v2(화면 2 데이터 없음)여도 화면 1은 정상이고, 화면 2는 "데이터 없음" 안내를 보여줍니다.
 
 ## 두 가지 버전 — 데모(포트폴리오) / 실데이터(우리집)
 
@@ -47,6 +57,13 @@ npm run dev:real       # http://localhost:3001
 ```
 
 매월 `rttr-publish` Job 실행 후 `npm run data:real` 만 다시 실행하고 브라우저를 새로고침하면 반영됩니다. (회사망처럼 SSL 검사가 있는 환경에서도 동작 — gcloud 사용)
+
+**아직 운영에 반영하지 않은 SQL(예: 화면 2)을 로컬에서 확인할 때**는 BigQuery 에서 직접 만듭니다.
+
+```bash
+pip install truststore            # 회사망 SSL 검사 환경에서만 (처음 한 번)
+npm run data:real -- bq           # 로컬 SQL 로 .private/snapshot.json 생성 (운영 파일은 건드리지 않음)
+```
 
 > 🔒 `.private/` 폴더는 `.gitignore`·`.dockerignore`에 포함되어 커밋·배포 이미지에 들어가지 않습니다. 실데이터 화면은 스크린샷·공유에 주의하세요.
 

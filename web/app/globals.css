@@ -23,6 +23,13 @@
   --series-4: #eda100; /* 이체(지출) */
   --series-1-wash: rgba(42, 120, 214, 0.1);
 
+  /* 화면 2 (Year End Tax Settlement) — Tableau 원본 색 계열 유지: 급여=초록, 실수령=청회색, 카드=빨강, 신용=청록, 직불=주황 */
+  --ye-gross: #2f9a48;
+  --ye-net: #4a71ad;
+  --ye-card: #e9574b;
+  --ye-credit: #13a3a0;
+  --ye-debit: #e58c0b;
+
   /* 증감 표시: 사용자 Tableau 규칙 그대로 — 좋은 방향 파랑, 나쁜 방향 빨강 (+ ▲▼ 아이콘) */
   --delta-good: #1c5cab;
   --delta-bad: #d03b3b;
@@ -49,6 +56,11 @@
     --series-3: #199e70;
     --series-4: #c98500;
     --series-1-wash: rgba(57, 135, 229, 0.14);
+    --ye-gross: #43b25d;
+    --ye-net: #6f95d2;
+    --ye-card: #f06b5f;
+    --ye-credit: #22bdb9;
+    --ye-debit: #f2a23a;
     --delta-good: #6da7ec;
     --delta-bad: #e66767;
     --accent: #ffffff;
@@ -72,6 +84,11 @@
   --series-3: #199e70;
   --series-4: #c98500;
   --series-1-wash: rgba(57, 135, 229, 0.14);
+  --ye-gross: #43b25d;
+  --ye-net: #6f95d2;
+  --ye-card: #f06b5f;
+  --ye-credit: #22bdb9;
+  --ye-debit: #f2a23a;
   --delta-good: #6da7ec;
   --delta-bad: #e66767;
   --accent: #ffffff;

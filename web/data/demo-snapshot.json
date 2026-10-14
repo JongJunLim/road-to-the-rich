@@ -1,7 +1,7 @@
 {
- "version": 2,
+ "version": 3,
  "source": "demo",
- "generated_at": "2026-09-28T16:40:09+09:00",
+ "generated_at": "2026-10-12T13:51:50+09:00",
  "data_updated_at": "2026-09-01T09:00:00",
  "owners": [
   {
@@ -5487,6 +5487,1750 @@
    "kind": "transfer_out",
    "category": "투자",
    "amount": 158228
+  }
+ ],
+ "year_end_monthly": [
+  {
+   "year": 2024,
+   "month": 10,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1079910
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 419950
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4272410
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3508700
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 228530
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 722040
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 481370
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3486030
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2923860
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 188270
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1010390
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 392930
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4155090
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3400720
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 202810
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 908400
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 605590
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3570830
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2965590
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 191440
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1140130
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 443390
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 9253760
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 7561460
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 530780
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 805680
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 537130
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 6998610
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 5722910
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 367320
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 949310
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 369200
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4229260
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3480650
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 253290
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 903960
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 602650
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3640780
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2933280
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 198410
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1094790
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 425760
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4061920
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3396440
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 200220
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 913250
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 608840
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3692520
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2961790
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 174880
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1215990
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 472900
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4143590
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3453820
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 225510
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 809190
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 539440
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3749580
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 3016740
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 192910
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 761810
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 296250
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4171840
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3462200
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 198720
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 809210
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 539480
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3622990
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2942080
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 174510
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1097200
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 426680
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4195390
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3437170
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 239550
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 915830
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 610550
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3676680
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 3014920
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 211410
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 892440
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 347050
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4059020
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3406320
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 241550
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 817490
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 545000
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3626380
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2984280
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 201780
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1131370
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 439980
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 8235690
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 6837740
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 429600
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 840300
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 560210
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 8055440
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 6499680
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 447890
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1028160
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 399850
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4094190
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3424280
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 202800
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 812820
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 541880
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3567520
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2926790
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 209020
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 910860
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 354220
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4146340
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3392310
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 228290
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 785280
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 523520
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3605970
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2994430
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 197720
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 771080
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 299860
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4158640
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3394800
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 246490
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 985260
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 656850
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3639630
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 3004200
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 197880
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 945310
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 367620
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4182490
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3509580
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 210710
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 757310
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 504890
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3669020
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 3009680
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 182190
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1024690
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 398480
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 8114110
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 6631250
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 416410
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 1070270
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 713500
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 7373220
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 6099350
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 381450
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1084940
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 421920
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4230880
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3440310
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 199750
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 803920
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 535940
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3690930
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2961880
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 171820
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 944410
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 367270
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4198400
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3491380
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 203910
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 811100
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 540730
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3679890
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2998790
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 181210
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1043530
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 405820
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4274980
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3507750
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 199370
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 894870
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 596580
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3634520
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2948920
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 203010
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1057610
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 411270
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4364270
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3502030
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 227750
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 1028090
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 685390
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3562400
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2949450
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 181250
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1182690
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 459930
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4306160
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3492300
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 234670
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 888930
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 592630
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3663990
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 3039470
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 202550
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 935170
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 363670
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4145140
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3457510
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 227000
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 932850
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 621920
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3681880
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 3017120
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 178200
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 997590
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 387950
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 9375470
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 7651900
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 477920
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 860120
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 573410
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 7245180
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 5864450
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 388520
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "owner": "bbang",
+   "metric": "credit",
+   "amount": 1061830
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "owner": "bbang",
+   "metric": "debit",
+   "amount": 412950
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "owner": "bbang",
+   "metric": "gross",
+   "amount": 4240840
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "owner": "bbang",
+   "metric": "net",
+   "amount": 3487050
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "owner": "bbang",
+   "metric": "tax_paid",
+   "amount": 228140
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "owner": "bbyak",
+   "metric": "credit",
+   "amount": 887460
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "owner": "bbyak",
+   "metric": "debit",
+   "amount": 591640
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "owner": "bbyak",
+   "metric": "gross",
+   "amount": 3700590
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "owner": "bbyak",
+   "metric": "net",
+   "amount": 2995630
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "owner": "bbyak",
+   "metric": "tax_paid",
+   "amount": 191180
+  }
+ ],
+ "year_end_annual": [
+  {
+   "year": 2021,
+   "owner": "bbang",
+   "gross_pay": 36508193,
+   "tax_paid": 1959890,
+   "income_deduction": 13027139,
+   "tax_base": 23481054,
+   "calculated_tax": 2262158,
+   "tax_reduction": 0,
+   "tax_credit": 494155,
+   "determined_tax": 1944800,
+   "refund_or_additional": -15080
+  },
+  {
+   "year": 2022,
+   "owner": "bbang",
+   "gross_pay": 39042013,
+   "tax_paid": 3039760,
+   "income_deduction": 12607148,
+   "tax_base": 26434865,
+   "calculated_tax": 2705230,
+   "tax_reduction": 0,
+   "tax_credit": 467318,
+   "determined_tax": 2461700,
+   "refund_or_additional": -578060
+  },
+  {
+   "year": 2023,
+   "owner": "bbang",
+   "gross_pay": 43124650,
+   "tax_paid": 2570930,
+   "income_deduction": 15010636,
+   "tax_base": 28114014,
+   "calculated_tax": 2957102,
+   "tax_reduction": 0,
+   "tax_credit": 395778,
+   "determined_tax": 2817460,
+   "refund_or_additional": 246520
+  },
+  {
+   "year": 2024,
+   "owner": "bbang",
+   "gross_pay": 45461861,
+   "tax_paid": 2422020,
+   "income_deduction": 16022897,
+   "tax_base": 29438964,
+   "calculated_tax": 3155845,
+   "tax_reduction": 0,
+   "tax_credit": 553706,
+   "determined_tax": 2862350,
+   "refund_or_additional": 440330
+  },
+  {
+   "year": 2025,
+   "owner": "bbang",
+   "gross_pay": 57792480,
+   "tax_paid": 3545520,
+   "income_deduction": 20270917,
+   "tax_base": 37521563,
+   "calculated_tax": 4368234,
+   "tax_reduction": 0,
+   "tax_credit": 895997,
+   "determined_tax": 3819460,
+   "refund_or_additional": 273940
+  },
+  {
+   "year": 2021,
+   "owner": "bbyak",
+   "gross_pay": 30879925,
+   "tax_paid": 525920,
+   "income_deduction": 9769404,
+   "tax_base": 21110521,
+   "calculated_tax": 1906578,
+   "tax_reduction": 953289,
+   "tax_credit": 401393,
+   "determined_tax": 607090,
+   "refund_or_additional": 81160
+  },
+  {
+   "year": 2022,
+   "owner": "bbyak",
+   "gross_pay": 32557396,
+   "tax_paid": 742630,
+   "income_deduction": 11615984,
+   "tax_base": 20941412,
+   "calculated_tax": 1881212,
+   "tax_reduction": 940606,
+   "tax_credit": 267515,
+   "determined_tax": 740400,
+   "refund_or_additional": -2230
+  },
+  {
+   "year": 2023,
+   "owner": "bbyak",
+   "gross_pay": 34644490,
+   "tax_paid": 2338710,
+   "income_deduction": 10448785,
+   "tax_base": 24195704,
+   "calculated_tax": 2369356,
+   "tax_reduction": 0,
+   "tax_credit": 296941,
+   "determined_tax": 2279660,
+   "refund_or_additional": -59050
+  },
+  {
+   "year": 2024,
+   "owner": "bbyak",
+   "gross_pay": 36649623,
+   "tax_paid": 1702280,
+   "income_deduction": 13181825,
+   "tax_base": 23467797,
+   "calculated_tax": 2260170,
+   "tax_reduction": 0,
+   "tax_credit": 355957,
+   "determined_tax": 2094630,
+   "refund_or_additional": 392360
+  },
+  {
+   "year": 2025,
+   "owner": "bbyak",
+   "gross_pay": 51919730,
+   "tax_paid": 3593870,
+   "income_deduction": 18475613,
+   "tax_base": 33444117,
+   "calculated_tax": 3756618,
+   "tax_reduction": 0,
+   "tax_credit": 766041,
+   "determined_tax": 3289630,
+   "refund_or_additional": -304230
   }
  ]
 }

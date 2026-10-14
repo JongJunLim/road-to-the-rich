@@ -1,5 +1,7 @@
 """
-BigQuery 마트 → snapshot JSON 내보내기 (Road To The Rich 웹앱용 데이터 계약 v2)
+BigQuery 마트 → snapshot JSON 내보내기 (Road To The Rich 웹앱용 데이터 계약 v3)
+
+v3: 화면 2(Year End Tax Settlement)용 year_end_monthly / year_end_annual 섹션 추가
 
 실행
   pip install -r requirements.txt
@@ -8,8 +10,8 @@ BigQuery 마트 → snapshot JSON 내보내기 (Road To The Rich 웹앱용 데�
   python export_snapshot.py --env prd --gcs gs://<비공개버킷>/snapshot/latest.json   # 운영
 
 --env 별 테이블
-  dev : banksalad.finance_status / investment_status / ledger_detail
-  prd : banksalad_prd.prd_finance_status / prd_investment_status / prd_ledger_detail
+  dev : banksalad.finance_status / investment_status / ledger_detail / pay_slip / tax_withholding_summary
+  prd : banksalad_prd.prd_ (위와 같은 이름에 prd_ 접두어)
   (BQ_PROJECT, BQ_DATASET, BQ_TABLE_PREFIX 환경변수로 덮어쓸 수 있음)
 
 기존 Cloud Run 파이프라인의 마지막 단계(BigQuery PRD 적재 직후)에서 호출하면 된다.
@@ -25,6 +27,16 @@ from pathlib import Path
 
 from google.cloud import bigquery
 
+# 회사망처럼 SSL 검사(사내 인증서)가 있는 PC에서 로컬 실행할 때:
+#   pip install truststore  → Windows/macOS 인증서 저장소를 그대로 사용 (gcloud 가 되는 환경이면 동작)
+# 설치하지 않았거나 Cloud Run 에서는 아무 일도 하지 않음
+try:
+    import truststore
+
+    truststore.inject_into_ssl()
+except ImportError:
+    pass
+
 SQL_DIR = Path(__file__).parent / "sql"
 KST = timezone(timedelta(hours=9))
 
@@ -34,13 +46,21 @@ ENVIRONMENTS = {
     "prd": {"dataset": "banksalad_prd", "prefix": "prd_"},
 }
 
-# 스냅샷 섹션 이름 → SQL 파일, 정수로 반올림할 숫자 컬럼
+# 스냅샷 섹션 이름 → (SQL 파일, 정수로 반올림할 숫자 컬럼, 0행이면 실패시킬지)
+YEAR_END_ANNUAL_COLS = [
+    "gross_pay", "tax_paid", "income_deduction", "tax_base", "calculated_tax",
+    "tax_reduction", "tax_credit", "determined_tax", "refund_or_additional",
+]
 SECTIONS = {
-    "asset":      ("asset_monthly.sql",      ["asset"]),
-    "investment": ("investment_monthly.sql", ["principal", "valuation"]),
-    "ledger":     ("ledger_monthly.sql",     ["amount"]),
+    "asset":            ("asset_monthly.sql",      ["asset"], True),
+    "investment":       ("investment_monthly.sql", ["principal", "valuation"], True),
+    "ledger":           ("ledger_monthly.sql",     ["amount"], True),
+    # 화면 2 — 급여명세서·원천징수영수증이 비어 있어도 화면 1 갱신은 막지 않음
+    "year_end_monthly": ("year_end_monthly.sql",   ["amount"], False),
+    "year_end_annual":  ("year_end_annual.sql",    YEAR_END_ANNUAL_COLS, False),
 }
 LEDGER_KINDS = {"income", "expense", "transfer_in", "transfer_out"}
+YEAR_END_METRICS = {"gross", "tax_paid", "net", "credit", "debit", "card_legacy"}
 
 OWNERS = [
     {"id": "bbang", "label": "빵준"},
@@ -56,6 +76,7 @@ SELECT MAX(ts) AS ts FROM (
 """
 
 
+QUERY_TIMEOUT_SEC = int(os.getenv("QUERY_TIMEOUT_SEC", "180"))
 CONFIG = {"dataset": "", "prefix": ""}  # main()에서 --env 로 채움
 
 
@@ -72,17 +93,32 @@ def render(sql: str) -> str:
 
 
 def run_section(client: bigquery.Client, name: str) -> list[dict]:
-    file_name, numeric_cols = SECTIONS[name]
+    file_name, numeric_cols, required = SECTIONS[name]
     sql = render((SQL_DIR / file_name).read_text(encoding="utf-8"))
+    print(f"  … {name} 조회 중", file=sys.stderr, flush=True)
+    try:
+        job = client.query(sql, timeout=60)  # 쿼리 전송 단계도 무한 대기하지 않게
+    except Exception as exc:
+        raise RuntimeError(
+            f"{name}: BigQuery 에 쿼리를 보내지 못했습니다 (60초 응답 없음) — {exc}\n"
+            "    회사망 보안 장비가 이 요청을 막는 경우일 수 있습니다. 다른 네트워크(핫스팟)나 Cloud Shell 에서 실행해 보세요."
+        ) from exc
+    try:
+        result = job.result(timeout=QUERY_TIMEOUT_SEC)  # 무한 대기 방지
+    except Exception as exc:
+        raise RuntimeError(f"{name}: 쿼리 실패/시간 초과 (job_id={job.job_id}) — {exc}") from exc
     rows = []
-    for r in client.query(sql).result():
+    for r in result:
         row = dict(r)
         for col in numeric_cols:
             # 금액은 원 단위 정수로 통일 (FLOAT 자산 금액 소수점 제거), NULL은 0
             row[col] = int(round(row[col] or 0))
         rows.append(row)
     if not rows:
-        raise RuntimeError(f"{name}: 결과가 0행입니다. 원천 테이블 적재를 확인하세요.")
+        if required:
+            raise RuntimeError(f"{name}: 결과가 0행입니다. 원천 테이블 적재를 확인하세요.")
+        print(f"  ⚠ {name}: 0행 (원천 테이블이 비어 있음 — 해당 화면은 '데이터 없음'으로 표시)", file=sys.stderr)
+        return rows
     validate_rows(name, rows)
     return rows
 
@@ -97,11 +133,18 @@ def validate_rows(name: str, rows: list[dict]) -> None:
         bad = {r["kind"] for r in rows} - LEDGER_KINDS
         if bad:
             raise RuntimeError(f"ledger: 알 수 없는 kind {bad}")
+    if name == "year_end_monthly":
+        bad = {r["metric"] for r in rows} - YEAR_END_METRICS
+        if bad:
+            raise RuntimeError(f"year_end_monthly: 알 수 없는 metric {bad}")
+        bad_month = [r for r in rows if not (1 <= int(r["month"]) <= 12)]
+        if bad_month:
+            raise RuntimeError(f"year_end_monthly: 잘못된 월 {bad_month[:3]}")
 
 
 def build_snapshot(client: bigquery.Client) -> dict:
     snapshot: dict = {
-        "version": 2,
+        "version": 3,
         "source": "banksalad",
         "generated_at": datetime.now(KST).isoformat(timespec="seconds"),
         "owners": OWNERS,
@@ -111,7 +154,7 @@ def build_snapshot(client: bigquery.Client) -> dict:
 
     for name in SECTIONS:
         snapshot[name] = run_section(client, name)
-        print(f"  ✓ {name}: {len(snapshot[name])}행", file=sys.stderr)
+        print(f"  ✓ {name}: {len(snapshot[name])}행", file=sys.stderr, flush=True)
     return snapshot
 
 
