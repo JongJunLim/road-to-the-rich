@@ -11,8 +11,8 @@ const nextConfig = {
   // 실데이터 개발 서버(npm run dev:real)는 빌드 폴더를 분리해 데모 서버와 동시에 띄울 수 있게 함
   distDir: process.env.NEXT_DIST_DIR || ".next",
   poweredByHeader: false,
-  // 스냅샷 JSON은 서버에서만 읽으므로 파일 추적에 포함
-  outputFileTracingIncludes: { "/": ["./data/**/*"] },
+  // 데모 JSON은 서버에서만 읽으므로 파일 추적에 포함
+  outputFileTracingIncludes: { "/*": ["./data/**/*"] }, // 모든 화면 (데모 스냅샷 · 데모 계획표)
   async rewrites() {
     return [
       { source: "/__/auth/:path*", destination: `${FIREBASE_AUTH_PROXY_TARGET}/__/auth/:path*` },

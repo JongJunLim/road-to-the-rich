@@ -35,6 +35,24 @@ export function allowedEmails(): Set<string> {
   );
 }
 
+/**
+ * EDITOR_EMAILS=me@gmail.com — 화면 3(Monthly Plan)을 수정할 수 있는 계정 (나머지 허용 계정은 보기만)
+ * 비어 있으면 아무도 수정할 수 없음 (안전한 기본값)
+ */
+export function editorEmails(): Set<string> {
+  return new Set(
+    (process.env.EDITOR_EMAILS ?? "")
+      .split(",")
+      .map((e) => e.trim().toLowerCase())
+      .filter(Boolean),
+  );
+}
+
+/** 로그인 + 허용 목록 + 편집자 목록을 모두 통과해야 수정 가능 */
+export function canEdit(user: SessionUser | null): boolean {
+  return !!user && isAuthEnabled() && allowedEmails().has(user.email) && editorEmails().has(user.email);
+}
+
 export interface FirebaseWebConfig {
   apiKey: string;
   authDomain: string;

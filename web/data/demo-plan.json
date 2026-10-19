@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-01T09:00:00+09:00",
+  "rows": [
+    { "id": "d1", "section": "income", "item": "A 급여", "amount": 3200000, "memo": "세전 : 3,800,000" },
+    { "id": "d2", "section": "income", "item": "B 급여", "amount": 2600000, "memo": "세전 : 3,050,000" },
+    { "id": "d3", "section": "saving", "item": "주택청약", "amount": 100000, "memo": "매월 25일 자동이체" },
+    { "id": "d4", "section": "saving", "item": "적금", "amount": 500000, "memo": "2년 만기 (2026.03~2028.03)" },
+    { "id": "d5", "section": "saving", "item": "ETF 적립", "amount": 300000, "memo": "" },
+    { "id": "d6", "section": "expense", "item": "전세 대출 이자", "amount": 280000, "memo": "변동금리 약 4.1%" },
+    { "id": "d7", "section": "expense", "item": "관리비", "amount": 170000, "memo": "겨울철 +3만 원 정도" },
+    { "id": "d8", "section": "expense", "item": "통신비", "amount": 62000, "memo": "2회선" },
+    { "id": "d9", "section": "expense", "item": "인터넷", "amount": 22000, "memo": "3년 약정\n카드 할인 적용 전 금액" },
+    { "id": "d10", "section": "expense", "item": "자동차 보험", "amount": null, "memo": "갱신 견적 대기" },
+    { "id": "d11", "section": "expense", "item": "구독 (음악·클라우드)", "amount": 16800, "memo": "" }
+  ]
+}

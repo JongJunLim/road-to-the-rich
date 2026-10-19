@@ -19,6 +19,8 @@ BigQuery PRD ──(export_snapshot.py)──▶ GCS 비공개 버킷 latest.jso
 | `web/lib/schema.ts` | 📌 **데이터 계약 v2** — 파이프라인과 웹앱의 유일한 약속 (가계부는 월×owner×구분×대분류 행) |
 | `web/lib/metrics.ts` | 화면 1 KPI 계산 (MoM, 수익률, Owner 합산, 가계부 기준월, 카테고리 필터) |
 | `web/lib/yearEnd.ts` | 화면 2 KPI 계산 (전년 동기 YoY, 원천징수영수증 대체, 카드 누적) |
+| `web/lib/plan.ts` · `planStore.ts` | 화면 3 계획표 검증·합계 / 저장소 (로컬 파일 또는 GCS, 동시 수정 보호) |
+| `web/app/api/plan/route.ts` | 화면 3 저장 API (`PUT`, 편집자만) |
 | `web/lib/*.test.ts` | KPI·필터 규칙 회귀 테스트 (`npm test`) |
 | `web/components/` | KPI 카드, 차트 카드, ECharts 차트 3종 |
 
@@ -28,7 +30,10 @@ BigQuery PRD ──(export_snapshot.py)──▶ GCS 비공개 버킷 latest.jso
 |---|---|---|
 | `/` | Road To The Rich — 자산 · 투자 · 가계부 | asset / investment / ledger |
 | `/year-end` | Year End Tax Settlement — 급여 · 실수령 · 세금 · 카드 지출 | year_end_monthly / year_end_annual (스냅샷 v3) |
+| `/plan` | Monthly Plan — 월 고정 수익 · 저축 · 지출 계획표 (웹에서 직접 수정) | `PLAN_SOURCE` (`gs://…/app/plan.json`) — BigQuery·스냅샷과 무관 |
 
+> 화면 3은 화면 1·2와 반대 방향입니다. 사람이 웹에서 입력 → `PUT /api/plan` → GCS `app/plan.json` 저장 (현재 상태 하나만 유지, 실수 복구는 GCS 객체 버전 관리). `EDITOR_EMAILS` 계정만 수정하고 나머지 허용 계정은 보기만 합니다.
+>
 > 웹은 v2·v3 스냅샷을 모두 읽습니다. 운영 스냅샷이 v2(화면 2 데이터 없음)여도 화면 1은 정상이고, 화면 2는 "데이터 없음" 안내를 보여줍니다.
 
 ## 두 가지 버전 — 데모(포트폴리오) / 실데이터(우리집)
@@ -112,6 +117,8 @@ python publish.py --dry-run     # 반영될 행 수만 확인 (변경 없음)
 | `SNAPSHOT_SOURCE` | private 모드의 스냅샷 위치 — 로컬 파일 경로 또는 `gs://bucket/path.json` |
 | `AUTH_ENABLED` | `true` 면 Google 로그인 + 허용 목록 검사. production + private 조합은 이 값이 없으면 로딩 거부 |
 | `ALLOWED_EMAILS` | 접속 허용 Google 계정 (쉼표 구분) |
+| `EDITOR_EMAILS` | 화면 3을 수정할 수 있는 계정 (비어 있으면 모두 보기 전용) |
+| `PLAN_SOURCE` | 화면 3 저장 위치 — 로컬 `.private/plan.json`(dev:real 자동) / 운영 `gs://bucket/app/plan.json` |
 | `FIREBASE_API_KEY` · `FIREBASE_AUTH_DOMAIN` · `FIREBASE_PROJECT_ID` · `FIREBASE_APP_ID` | Firebase 웹 앱 설정 (공개 식별자). 운영은 `FIREBASE_AUTH_DOMAIN=self` → 접속 주소의 `/__/auth` 프록시로 로그인 (iPhone Safari 저장소 분리 대응) |
 
 ## 배포 (Cloud Run)
