@@ -74,6 +74,35 @@ GCP 콘솔 → **API 및 서비스 → 사용자 인증 정보** → OAuth 2.0 �
 3. 허용되지 않은 계정으로 로그인 → "접근 권한이 없어요" 확인
 4. 시크릿 창에서 로그인 없이 접속 → 로그인 화면만 보이는지 확인
 
+## 화면 3 (Monthly Plan) 추가 시 1회 설정
+
+화면 3은 웹에서 직접 수정한 내용을 `gs://%BUCKET%/app/plan.json` 에 저장합니다. 웹 서비스 계정에 **`app/` 폴더만** 쓰기 권한을 줍니다.
+
+```bat
+:: 1) 실수로 지우거나 잘못 저장해도 이전 버전으로 되돌릴 수 있게
+gcloud storage buckets update gs://%BUCKET% --versioning
+
+:: 2) app/ 폴더만 쓰기 (snapshot/latest.json 은 계속 읽기 전용)
+gcloud storage buckets add-iam-policy-binding gs://%BUCKET% --member=serviceAccount:%WEB_SA% --role=roles/storage.objectUser --condition="title=rttr-web-plan-write,expression=resource.name.startsWith('projects/_/buckets/%BUCKET%/objects/app/')"
+
+:: 3) (선택) 초기 데이터 올리기 — 없으면 빈 표에서 시작
+gcloud storage cp .private\plan.json gs://%BUCKET%/app/plan.json
+```
+
+`deploy/private.env.yaml` 에 두 줄 추가 후 3) 배포 명령 다시 실행:
+
+```yaml
+EDITOR_EMAILS: "내계정@gmail.com"
+PLAN_SOURCE: "gs://버킷이름/app/plan.json"
+```
+
+- 조건(condition) 추가가 거부되면 버킷의 "균일한 버킷 수준 액세스"가 켜져 있는지 확인합니다.
+- 이전 버전 보기·복구:
+  ```bat
+  gcloud storage ls -a gs://%BUCKET%/app/plan.json
+  gcloud storage cp gs://%BUCKET%/app/plan.json#<generation번호> gs://%BUCKET%/app/plan.json
+  ```
+
 ## 이후 운영
 
 | 할 일 | 명령 |
@@ -81,6 +110,7 @@ GCP 콘솔 → **API 및 서비스 → 사용자 인증 정보** → OAuth 2.0 �
 | 매월 데이터 갱신 | `rttr-publish` Job 실행만 하면 됨 (웹은 최대 10분 안에 새 파일을 읽음) |
 | 코드 수정 반영 | 3) 배포 명령 다시 실행 |
 | 허용 계정 변경 | `deploy/private.env.yaml` 수정 후 3) 배포 명령 다시 실행 |
+| 화면 3 계획표 수정 | 웹에서 [편집] → [저장] (배포 불필요) |
 | 로그 보기 | 콘솔 → Cloud Run → `rttr-web` → 로그 |
 
 ## 막힐 때

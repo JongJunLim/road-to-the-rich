@@ -39,7 +39,7 @@ async function loadPrivate(): Promise<unknown> {
   const match = source.match(/^gs:\/\/([^/]+)\/(.+)$/);
   if (!match) {
     // 로컬 파일 (개발용)
-    return JSON.parse(await readFile(path.resolve(process.cwd(), source), "utf-8"));
+    return JSON.parse(await readFile(path.resolve(/*turbopackIgnore: true*/ process.cwd(), source), "utf-8"));
   }
   const { Storage } = await import("@google-cloud/storage");
   const [buf] = await new Storage().bucket(match[1]).file(match[2]).download();
