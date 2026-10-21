@@ -2,8 +2,8 @@
   "version": 1,
   "updatedAt": "2026-10-01T09:00:00+09:00",
   "rows": [
-    { "id": "d1", "section": "income", "item": "A 급여", "amount": 3200000, "memo": "세전 : 3,800,000" },
-    { "id": "d2", "section": "income", "item": "B 급여", "amount": 2600000, "memo": "세전 : 3,050,000" },
+    { "id": "d1", "section": "income", "item": "남편 급여", "amount": 3200000, "memo": "세전 : 3,800,000" },
+    { "id": "d2", "section": "income", "item": "아내 급여", "amount": 2600000, "memo": "세전 : 3,050,000" },
     { "id": "d3", "section": "saving", "item": "주택청약", "amount": 100000, "memo": "매월 25일 자동이체" },
     { "id": "d4", "section": "saving", "item": "적금", "amount": 500000, "memo": "2년 만기 (2026.03~2028.03)" },
     { "id": "d5", "section": "saving", "item": "ETF 적립", "amount": 300000, "memo": "" },
