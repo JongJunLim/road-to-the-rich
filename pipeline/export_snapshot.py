@@ -41,7 +41,27 @@ except ImportError:
 SQL_DIR = Path(__file__).parent / "sql"
 KST = timezone(timedelta(hours=9))
 
-PROJECT = os.getenv("BQ_PROJECT", "project-7fa653f6-d7a3-40a0-893")
+def _resolve_project() -> str:
+    """GCP 프로젝트 ID — 코드에 적지 않고 실행 환경에서 찾는다.
+    순서: BQ_PROJECT → GOOGLE_CLOUD_PROJECT → 기본 인증 정보
+    (Cloud Run 은 메타데이터 서버, 로컬은 `gcloud config set project` 값)"""
+    project = os.getenv("BQ_PROJECT") or os.getenv("GOOGLE_CLOUD_PROJECT")
+    if not project:
+        try:
+            import google.auth
+
+            _, project = google.auth.default()
+        except Exception:  # 인증 정보가 아예 없으면 아래 안내로
+            project = None
+    if not project:
+        raise SystemExit(
+            "❌ GCP 프로젝트를 찾을 수 없습니다. BQ_PROJECT 환경변수를 설정하거나 "
+            "`gcloud config set project <프로젝트-ID>` 를 실행하세요."
+        )
+    return project
+
+
+PROJECT = _resolve_project()
 ENVIRONMENTS = {
     "dev": {"dataset": "banksalad", "prefix": ""},
     "prd": {"dataset": "banksalad_prd", "prefix": "prd_"},

@@ -26,7 +26,7 @@ Cloud Run Job 하나(`rttr-publish`)로 합칩니다.
 ## 최초 1회 설정 (Windows 명령 프롬프트, `pipeline` 폴더에서)
 
 ```bat
-set PROJECT=project-7fa653f6-d7a3-40a0-893
+set PROJECT=your-project-id
 set REGION=asia-northeast3
 set BUCKET=%PROJECT%-rttr-snapshot
 set SA=rttr-publish@%PROJECT%.iam.gserviceaccount.com
@@ -55,8 +55,8 @@ gcloud storage buckets add-iam-policy-binding gs://%BUCKET% --member=serviceAcco
 
 ```sql
 GRANT `roles/bigquery.dataEditor`
-ON SCHEMA `project-7fa653f6-d7a3-40a0-893.banksalad_prd`
-TO "serviceAccount:rttr-publish@project-7fa653f6-d7a3-40a0-893.iam.gserviceaccount.com";
+ON SCHEMA `your-project-id.banksalad_prd`
+TO "serviceAccount:rttr-publish@your-project-id.iam.gserviceaccount.com";
 ```
 
 | 권한 | 범위 | 용도 |
@@ -69,7 +69,7 @@ TO "serviceAccount:rttr-publish@project-7fa653f6-d7a3-40a0-893.iam.gserviceaccou
 ### 3) Job 배포
 
 ```bat
-gcloud run jobs deploy rttr-publish --source . --region %REGION% --service-account %SA% --set-env-vars SNAPSHOT_GCS_URI=gs://%BUCKET%/snapshot/latest.json --max-retries 0 --task-timeout 600
+gcloud run jobs deploy rttr-publish --source . --region %REGION% --service-account %SA% --set-env-vars SNAPSHOT_GCS_URI=gs://%BUCKET%/snapshot/latest.json,BQ_PROJECT=%PROJECT% --max-retries 0 --task-timeout 600
 ```
 
 처음에는 이미지 빌드로 2~4분 걸립니다.
