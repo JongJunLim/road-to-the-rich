@@ -19,7 +19,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 KST = timezone(timedelta(hours=9))
-OWNERS = [{"id": "bbang", "label": "빵준"}, {"id": "bbyak", "label": "또용"}]
+OWNERS = [{"id": "bbang", "label": "남편"}, {"id": "bbyak", "label": "아내"}]  # 데모 표시 이름 (실데이터 이름은 export_snapshot.py)
 
 
 def month_list(end_ym: str, n: int) -> list[str]:
