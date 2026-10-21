@@ -7,15 +7,14 @@
 //                                 → 회사망 SSL 검사 환경이면 먼저 pip install truststore
 //   npm run data:real -- bq dev  BigQuery dev 테이블에서 생성
 //
-// GCS 위치는 .env.local 의 SNAPSHOT_GCS_URI 로 바꿀 수 있음
+// GCS 위치는 .env.local 의 SNAPSHOT_GCS_URI (필수), BigQuery 프로젝트는 BQ_PROJECT (선택)
 import { existsSync, mkdirSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 
 if (existsSync(".env.local") && typeof process.loadEnvFile === "function") process.loadEnvFile(".env.local");
 
 const OUT = ".private/snapshot.json";
-const GCS_URI =
-  process.env.SNAPSHOT_GCS_URI ?? "gs://project-7fa653f6-d7a3-40a0-893-rttr-snapshot/snapshot/latest.json";
+const GCS_URI = process.env.SNAPSHOT_GCS_URI?.trim();
 const [mode, env] = process.argv.slice(2);
 mkdirSync(".private", { recursive: true });
 
@@ -31,6 +30,11 @@ function done(status, hints) {
 
 if (mode !== "bq") {
   // ---------- 기본: GCS 에서 다운로드 (gcloud 사용) ----------
+  if (!GCS_URI) {
+    console.error("❌ SNAPSHOT_GCS_URI 가 없습니다. web/.env.local 에 아래처럼 추가하세요 (.env.example 참고)");
+    console.error("   SNAPSHOT_GCS_URI=gs://<비공개버킷>/snapshot/latest.json");
+    process.exit(1);
+  }
   console.log(`▶ gcloud storage cp ${GCS_URI} ${OUT}`);
   const run = spawnSync("gcloud", ["storage", "cp", GCS_URI, OUT], { stdio: "inherit", shell: true });
   if (run.status === 0) console.log("   ℹ 운영 스냅샷입니다. 아직 운영에 반영하지 않은 SQL(예: 화면 2)은 npm run data:real -- bq 로 확인하세요.");

@@ -12,7 +12,7 @@ Cloud Run 서비스 `rttr-web` 으로 실데이터 대시보드를 배포합니�
 ## 최초 1회 (Windows 명령 프롬프트, `web` 폴더에서)
 
 ```bat
-set PROJECT=project-7fa653f6-d7a3-40a0-893
+set PROJECT=your-project-id
 set REGION=asia-northeast3
 set BUCKET=%PROJECT%-rttr-snapshot
 set WEB_SA=rttr-web@%PROJECT%.iam.gserviceaccount.com
