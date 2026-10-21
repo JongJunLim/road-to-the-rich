@@ -1,7 +1,7 @@
 {
  "version": 3,
  "source": "demo",
- "generated_at": "2026-10-12T13:51:50+09:00",
+ "generated_at": "2026-10-21T12:31:12+09:00",
  "data_updated_at": "2026-09-01T09:00:00",
  "owners": [
   {
@@ -7231,6 +7231,2353 @@
    "tax_credit": 766041,
    "determined_tax": 3289630,
    "refund_or_additional": -304230
+  }
+ ],
+ "investment_product": [
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 1998839,
+   "valuation": 1936336
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1281458,
+   "valuation": 1293900
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 4114296,
+   "valuation": 4200934
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 5441172,
+   "valuation": 5811104
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 2931409,
+   "valuation": 3011524
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 1650108,
+   "valuation": 1703725
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 1582718,
+   "valuation": 1754477
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 2482568,
+   "valuation": 2503843
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 1252794,
+   "valuation": 1295828
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 1498115,
+   "valuation": 1526489
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 1933134,
+   "valuation": 1985131
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 1313671,
+   "valuation": 1401593
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 421827,
+   "valuation": 417311
+  },
+  {
+   "ym": "2024-10",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 797891,
+   "valuation": 802805
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2025639,
+   "valuation": 2016580
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1473761,
+   "valuation": 1543534
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 4240636,
+   "valuation": 4629112
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 5613067,
+   "valuation": 5958727
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 2973786,
+   "valuation": 2983579
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 1549778,
+   "valuation": 1639819
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 1623333,
+   "valuation": 1896649
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 2674948,
+   "valuation": 2595388
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 1278787,
+   "valuation": 1315770
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 1520372,
+   "valuation": 1487690
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 1911084,
+   "valuation": 1857271
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 1511329,
+   "valuation": 1636613
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 431197,
+   "valuation": 398708
+  },
+  {
+   "ym": "2024-11",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 872283,
+   "valuation": 870560
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 1925584,
+   "valuation": 1880720
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1354077,
+   "valuation": 1423673
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 4847159,
+   "valuation": 5257734
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 6176439,
+   "valuation": 6684139
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 3011261,
+   "valuation": 3055389
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 1603264,
+   "valuation": 1763115
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 1582216,
+   "valuation": 1897230
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 2866312,
+   "valuation": 2684941
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 1409685,
+   "valuation": 1469109
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 1752144,
+   "valuation": 1682028
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 2198065,
+   "valuation": 2045952
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 1579338,
+   "valuation": 1742689
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 466669,
+   "valuation": 415965
+  },
+  {
+   "ym": "2024-12",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 927787,
+   "valuation": 914316
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2182074,
+   "valuation": 2072670
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1519555,
+   "valuation": 1627681
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 4503007,
+   "valuation": 5066405
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 6432782,
+   "valuation": 6918345
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 3478955,
+   "valuation": 3498763
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 1604182,
+   "valuation": 1743494
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 1779445,
+   "valuation": 2184642
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 3107960,
+   "valuation": 3027594
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 1377771,
+   "valuation": 1538820
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 1962139,
+   "valuation": 1945190
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 2317745,
+   "valuation": 2343583
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 1709923,
+   "valuation": 2063571
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 462476,
+   "valuation": 431716
+  },
+  {
+   "ym": "2025-01",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 961986,
+   "valuation": 994526
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2140193,
+   "valuation": 2018374
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1453192,
+   "valuation": 1559079
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 5004476,
+   "valuation": 5597635
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 6457118,
+   "valuation": 6958355
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 3253318,
+   "valuation": 3316588
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 1823850,
+   "valuation": 2032873
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 1867853,
+   "valuation": 2341096
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 3384441,
+   "valuation": 3332870
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 1598721,
+   "valuation": 1873794
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 2001754,
+   "valuation": 1987653
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 2286044,
+   "valuation": 2412467
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 1994981,
+   "valuation": 2484492
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 566292,
+   "valuation": 523670
+  },
+  {
+   "ym": "2025-02",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 1067767,
+   "valuation": 1092054
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2348576,
+   "valuation": 2156357
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1608843,
+   "valuation": 1749891
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 4978830,
+   "valuation": 5641981
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 7186641,
+   "valuation": 7878185
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 3168381,
+   "valuation": 3247785
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 1796627,
+   "valuation": 1994143
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 1912102,
+   "valuation": 2496658
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 3425481,
+   "valuation": 3239827
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 1597209,
+   "valuation": 1947381
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 2027309,
+   "valuation": 2078743
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 2791544,
+   "valuation": 3093166
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 1954241,
+   "valuation": 2560200
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 618908,
+   "valuation": 550157
+  },
+  {
+   "ym": "2025-03",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 1185308,
+   "valuation": 1186526
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2302080,
+   "valuation": 1971639
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1610329,
+   "valuation": 1677531
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 5047864,
+   "valuation": 5684712
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 7382379,
+   "valuation": 7894754
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 3815178,
+   "valuation": 3853446
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 1843533,
+   "valuation": 1989801
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 1998637,
+   "valuation": 2539117
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 3776000,
+   "valuation": 3546228
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 1792999,
+   "valuation": 2175984
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 2351515,
+   "valuation": 2417962
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 2505091,
+   "valuation": 2795142
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 1912998,
+   "valuation": 2532605
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 587886,
+   "valuation": 513058
+  },
+  {
+   "ym": "2025-04",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 1173511,
+   "valuation": 1153021
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2474702,
+   "valuation": 2131043
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1777961,
+   "valuation": 1862677
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 5704536,
+   "valuation": 6352541
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 7091648,
+   "valuation": 7593238
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 3535091,
+   "valuation": 3578895
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 1990347,
+   "valuation": 2042781
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 2125715,
+   "valuation": 2727825
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 3933686,
+   "valuation": 3595350
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 1784971,
+   "valuation": 2195314
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 2257643,
+   "valuation": 2253125
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 2638079,
+   "valuation": 2925602
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 2279225,
+   "valuation": 3074804
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 621817,
+   "valuation": 521451
+  },
+  {
+   "ym": "2025-05",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 1284579,
+   "valuation": 1271354
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2760193,
+   "valuation": 2312277
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1754603,
+   "valuation": 1857413
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 5472375,
+   "valuation": 6149655
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 7289326,
+   "valuation": 7662009
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 3702565,
+   "valuation": 3689871
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 2077580,
+   "valuation": 2069527
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 2143358,
+   "valuation": 2842248
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 3837042,
+   "valuation": 3407051
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 2055913,
+   "valuation": 2560075
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 2453174,
+   "valuation": 2377102
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 2889337,
+   "valuation": 3260400
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 2228195,
+   "valuation": 3146534
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 664926,
+   "valuation": 551206
+  },
+  {
+   "ym": "2025-06",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 1371413,
+   "valuation": 1297632
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2564679,
+   "valuation": 2081049
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1737222,
+   "valuation": 1912415
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 5913097,
+   "valuation": 6808377
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 7701835,
+   "valuation": 8081322
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 4008738,
+   "valuation": 4031070
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 1899047,
+   "valuation": 1897267
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 1875382,
+   "valuation": 2576500
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 4411679,
+   "valuation": 3894314
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 2240719,
+   "valuation": 2921435
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 2446704,
+   "valuation": 2357242
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 2934300,
+   "valuation": 3224605
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 2337421,
+   "valuation": 3420799
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 689363,
+   "valuation": 563787
+  },
+  {
+   "ym": "2025-07",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 1439814,
+   "valuation": 1344818
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2548206,
+   "valuation": 2037347
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1831472,
+   "valuation": 2041386
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 5771799,
+   "valuation": 6780790
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 8284157,
+   "valuation": 8608815
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 3580038,
+   "valuation": 3702878
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 2083419,
+   "valuation": 2106654
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 2100909,
+   "valuation": 3056130
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 4472522,
+   "valuation": 3882892
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 2299228,
+   "valuation": 3070737
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 2833821,
+   "valuation": 2740019
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 3117554,
+   "valuation": 3355080
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 2620833,
+   "valuation": 3924485
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 708638,
+   "valuation": 555129
+  },
+  {
+   "ym": "2025-08",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 1447404,
+   "valuation": 1306658
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2606276,
+   "valuation": 2018977
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1953459,
+   "valuation": 2140983
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 5422714,
+   "valuation": 6279027
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 8329769,
+   "valuation": 8488704
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 4216032,
+   "valuation": 4117659
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 2168743,
+   "valuation": 2147462
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 2203007,
+   "valuation": 3226188
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 4766757,
+   "valuation": 4257968
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 2218248,
+   "valuation": 3098094
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 3029924,
+   "valuation": 2866752
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 3312438,
+   "valuation": 3725813
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 2647729,
+   "valuation": 4106421
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 789981,
+   "valuation": 611571
+  },
+  {
+   "ym": "2025-09",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 1434923,
+   "valuation": 1269381
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2668055,
+   "valuation": 1997882
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 1954590,
+   "valuation": 2155732
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 6393160,
+   "valuation": 7485534
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 8561654,
+   "valuation": 8810857
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 4086895,
+   "valuation": 3814301
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 2148818,
+   "valuation": 2141723
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 2086828,
+   "valuation": 3125971
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 4601732,
+   "valuation": 4054516
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 2170216,
+   "valuation": 3087571
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 2843756,
+   "valuation": 2673085
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 3739978,
+   "valuation": 4368003
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 2883295,
+   "valuation": 4572647
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 828787,
+   "valuation": 632989
+  },
+  {
+   "ym": "2025-10",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 1632236,
+   "valuation": 1451189
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2738845,
+   "valuation": 1979539
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 2179657,
+   "valuation": 2507193
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 6553471,
+   "valuation": 8150395
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 8200656,
+   "valuation": 8668662
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 4234640,
+   "valuation": 3940410
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 2423089,
+   "valuation": 2416372
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 2269642,
+   "valuation": 3588429
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 4673887,
+   "valuation": 4082108
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 2580713,
+   "valuation": 3740318
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 3181323,
+   "valuation": 3015552
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 3692899,
+   "valuation": 4421893
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 3029436,
+   "valuation": 5046890
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 862614,
+   "valuation": 644115
+  },
+  {
+   "ym": "2025-11",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 1679128,
+   "valuation": 1431124
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2946297,
+   "valuation": 2004948
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 2183575,
+   "valuation": 2495098
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 6297128,
+   "valuation": 7883492
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 8738016,
+   "valuation": 8962230
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 4585397,
+   "valuation": 4131491
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 2376041,
+   "valuation": 2270084
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 2473546,
+   "valuation": 3953657
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 5286006,
+   "valuation": 4632944
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 2410882,
+   "valuation": 3578199
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 3268113,
+   "valuation": 2978638
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 4129061,
+   "valuation": 4956972
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 2856736,
+   "valuation": 4910806
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 861662,
+   "valuation": 628732
+  },
+  {
+   "ym": "2025-12",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 1587540,
+   "valuation": 1283709
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 2933068,
+   "valuation": 2021699
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "product": "금 ETF",
+   "principal": 2227411,
+   "valuation": 2565267
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 6745761,
+   "valuation": 8677215
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 9107679,
+   "valuation": 9247971
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 4667641,
+   "valuation": 4298892
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 2484763,
+   "valuation": 2350810
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 2433677,
+   "valuation": 4068146
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 83581,
+   "valuation": 75969
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 34302,
+   "valuation": 53303
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 47791,
+   "valuation": 44424
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 54907,
+   "valuation": 67317
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 40791,
+   "valuation": 72853
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 12307,
+   "valuation": 8664
+  },
+  {
+   "ym": "2026-01",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 26321,
+   "valuation": 20470
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 3272133,
+   "valuation": 2235834
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 6890210,
+   "valuation": 9026011
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 10794378,
+   "valuation": 11176136
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 5153669,
+   "valuation": 4706210
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 2854223,
+   "valuation": 2816200
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 2635387,
+   "valuation": 4668609
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 99052,
+   "valuation": 87673
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 52970,
+   "valuation": 83294
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 60111,
+   "valuation": 57489
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 71519,
+   "valuation": 88262
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 61993,
+   "valuation": 113285
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 18247,
+   "valuation": 12796
+  },
+  {
+   "ym": "2026-02",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 36108,
+   "valuation": 29201
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 3689639,
+   "valuation": 2407542
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 7498427,
+   "valuation": 10153805
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 10003030,
+   "valuation": 10321366
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 5083963,
+   "valuation": 4897048
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 2740426,
+   "valuation": 2807337
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 3084515,
+   "valuation": 5648902
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 134895,
+   "valuation": 118822
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 59151,
+   "valuation": 91928
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 79271,
+   "valuation": 75582
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 89010,
+   "valuation": 110949
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 72452,
+   "valuation": 134212
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 21930,
+   "valuation": 15254
+  },
+  {
+   "ym": "2026-03",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 43291,
+   "valuation": 35253
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 32040,
+   "valuation": 20228
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 73966,
+   "valuation": 98004
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 92800,
+   "valuation": 94514
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 48862,
+   "valuation": 45384
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 26805,
+   "valuation": 27274
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 25527,
+   "valuation": 46596
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 164518,
+   "valuation": 143704
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 71889,
+   "valuation": 111591
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 87987,
+   "valuation": 80690
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 110730,
+   "valuation": 137788
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 91701,
+   "valuation": 171546
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 26231,
+   "valuation": 17128
+  },
+  {
+   "ym": "2026-04",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 46944,
+   "valuation": 36553
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 41072,
+   "valuation": 25760
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 96655,
+   "valuation": 127342
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 126081,
+   "valuation": 129070
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 64263,
+   "valuation": 58616
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 36065,
+   "valuation": 35703
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 35864,
+   "valuation": 67509
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 178740,
+   "valuation": 156797
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 88856,
+   "valuation": 142832
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 113272,
+   "valuation": 106306
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 132982,
+   "valuation": 170876
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 96232,
+   "valuation": 187563
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 29777,
+   "valuation": 18997
+  },
+  {
+   "ym": "2026-05",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 60141,
+   "valuation": 45629
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 51434,
+   "valuation": 30970
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 112890,
+   "valuation": 146429
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 158747,
+   "valuation": 161313
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 77099,
+   "valuation": 69109
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 40144,
+   "valuation": 40114
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 40012,
+   "valuation": 77266
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbang",
+   "product": "팔란티어",
+   "principal": 19674,
+   "valuation": 18799
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 197423,
+   "valuation": 177595
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 97851,
+   "valuation": 162431
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 134232,
+   "valuation": 127033
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 154333,
+   "valuation": 201570
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 118709,
+   "valuation": 237012
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 32866,
+   "valuation": 20996
+  },
+  {
+   "ym": "2026-06",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 64586,
+   "valuation": 48363
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 62888,
+   "valuation": 36469
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 140966,
+   "valuation": 182471
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 183105,
+   "valuation": 184143
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 88979,
+   "valuation": 77953
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 49942,
+   "valuation": 49147
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 48510,
+   "valuation": 94459
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbang",
+   "product": "팔란티어",
+   "principal": 25610,
+   "valuation": 25358
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 217005,
+   "valuation": 197271
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 103022,
+   "valuation": 162334
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 134677,
+   "valuation": 122022
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "product": "브로드컴",
+   "principal": 34533,
+   "valuation": 35575
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 173653,
+   "valuation": 219172
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 128113,
+   "valuation": 249884
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 33584,
+   "valuation": 21803
+  },
+  {
+   "ym": "2026-07",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 75413,
+   "valuation": 55939
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 71529,
+   "valuation": 40406
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 151981,
+   "valuation": 195524
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 226503,
+   "valuation": 226284
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 102814,
+   "valuation": 89558
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 61678,
+   "valuation": 61413
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 54277,
+   "valuation": 103285
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbang",
+   "product": "팔란티어",
+   "principal": 31218,
+   "valuation": 30530
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 244281,
+   "valuation": 220172
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 112205,
+   "valuation": 174228
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 147329,
+   "valuation": 130711
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "product": "브로드컴",
+   "principal": 41656,
+   "valuation": 42566
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 191349,
+   "valuation": 236793
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 134160,
+   "valuation": 263412
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 42832,
+   "valuation": 24859
+  },
+  {
+   "ym": "2026-08",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 86188,
+   "valuation": 60259
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbang",
+   "product": "2차전지 ETF",
+   "principal": 77786,
+   "valuation": 40591
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbang",
+   "product": "나스닥100 ETF",
+   "principal": 186133,
+   "valuation": 242008
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbang",
+   "product": "미국 S&P500 ETF",
+   "principal": 251519,
+   "valuation": 249433
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbang",
+   "product": "미국 배당 ETF",
+   "principal": 122921,
+   "valuation": 107107
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbang",
+   "product": "애플",
+   "principal": 64624,
+   "valuation": 62050
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbang",
+   "product": "엔비디아",
+   "principal": 66122,
+   "valuation": 128762
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbang",
+   "product": "팔란티어",
+   "principal": 30895,
+   "valuation": 31049
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbyak",
+   "product": "SK하이닉스",
+   "principal": 270423,
+   "valuation": 241298
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbyak",
+   "product": "마이크로소프트",
+   "principal": 137736,
+   "valuation": 214920
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbyak",
+   "product": "미국채 ETF",
+   "principal": 159605,
+   "valuation": 140004
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbyak",
+   "product": "브로드컴",
+   "principal": 45485,
+   "valuation": 46001
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbyak",
+   "product": "삼성전자",
+   "principal": 186613,
+   "valuation": 224324
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbyak",
+   "product": "알파벳 Class A",
+   "principal": 166790,
+   "valuation": 331806
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbyak",
+   "product": "카카오페이",
+   "principal": 44844,
+   "valuation": 24094
+  },
+  {
+   "ym": "2026-09",
+   "owner": "bbyak",
+   "product": "테슬라",
+   "principal": 88504,
+   "valuation": 58553
   }
  ]
 }

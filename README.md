@@ -13,12 +13,13 @@ BigQuery PRD ──(export_snapshot.py)──▶ GCS 비공개 버킷 latest.jso
 
 | 경로 | 역할 |
 |---|---|
-| `pipeline/sql/*.sql` | KPI 정의서 기반 마트 쿼리 — 화면 1: asset / investment / ledger, 화면 2: year_end_monthly / year_end_annual |
+| `pipeline/sql/*.sql` | KPI 정의서 기반 마트 쿼리 — 화면 1: asset / investment / ledger, 화면 2: year_end_monthly / year_end_annual, Investment: investment_product |
 | `pipeline/export_snapshot.py` | 마트 → 스냅샷 JSON (로컬 파일 또는 GCS 업로드) |
 | `pipeline/generate_demo.py` | 합성 데이터 생성 (실데이터와 동일 스키마) |
 | `web/lib/schema.ts` | 📌 **데이터 계약 v2** — 파이프라인과 웹앱의 유일한 약속 (가계부는 월×owner×구분×대분류 행) |
 | `web/lib/metrics.ts` | 화면 1 KPI 계산 (MoM, 수익률, Owner 합산, 가계부 기준월, 카테고리 필터) |
 | `web/lib/yearEnd.ts` | 화면 2 KPI 계산 (전년 동기 YoY, 원천징수영수증 대체, 카드 누적) |
+| `web/lib/invest.ts` | Investment 화면 계산 (종목 합산, 합계 기준 수익률, 전월·전년 동월 비교, 소계·총계) |
 | `web/lib/plan.ts` · `planStore.ts` | 화면 3 계획표 검증·합계 / 저장소 (로컬 파일 또는 GCS, 동시 수정 보호) |
 | `web/app/api/plan/route.ts` | 화면 3 저장 API (`PUT`, 편집자만) |
 | `web/lib/*.test.ts` | KPI·필터 규칙 회귀 테스트 (`npm test`) |
@@ -30,6 +31,7 @@ BigQuery PRD ──(export_snapshot.py)──▶ GCS 비공개 버킷 latest.jso
 |---|---|---|
 | `/` | Road To The Rich — 자산 · 투자 · 가계부 | asset / investment / ledger |
 | `/year-end` | Year End Tax Settlement — 급여 · 실수령 · 세금 · 카드 지출 | year_end_monthly / year_end_annual (스냅샷 v3) |
+| `/investment` | Investment — 종목별 원금 · 평가금 · 수익률 (추이 · 트리맵 · 표) | investment_product (스냅샷 v3 선택 섹션) |
 | `/plan` | Monthly Plan — 월 고정 수익 · 저축 · 지출 계획표 (웹에서 직접 수정) | `PLAN_SOURCE` (`gs://…/app/plan.json`) — BigQuery·스냅샷과 무관 |
 
 > 화면 3은 화면 1·2와 반대 방향입니다. 사람이 웹에서 입력 → `PUT /api/plan` → GCS `app/plan.json` 저장 (현재 상태 하나만 유지, 실수 복구는 GCS 객체 버전 관리). `EDITOR_EMAILS` 계정만 수정하고 나머지 허용 계정은 보기만 합니다.

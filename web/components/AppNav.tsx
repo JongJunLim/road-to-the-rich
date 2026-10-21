@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const TABS = [
   { href: "/", label: "Road To The Rich", short: "자산·가계부" },
   { href: "/year-end", label: "Year End Tax Settlement", short: "연말정산" },
+  { href: "/investment", label: "Investment", short: "투자" },
   { href: "/plan", label: "Monthly Plan", short: "고정 수지" },
 ];
 
@@ -20,11 +21,11 @@ function PendingDot() {
   );
 }
 
-/** 화면 전환 탭 — 화면 1(자산·가계부) / 화면 2(연말정산) / 화면 3(월 고정 수지 계획) */
+/** 화면 전환 탭 — 자산·가계부 / 연말정산 / 투자(종목별) / 월 고정 수지 계획 */
 export default function AppNav() {
   const pathname = usePathname();
   return (
-    <nav aria-label="화면 선택" className="mb-4 flex w-fit max-w-full items-center rounded-full border border-line bg-surface p-1">
+    <nav aria-label="화면 선택" className="mb-4 flex w-fit max-w-full items-center overflow-x-auto rounded-full border border-line bg-surface p-1 [scrollbar-width:none]">
       {TABS.map((t) => {
         const active = t.href === "/" ? pathname === "/" : pathname.startsWith(t.href);
         return (
@@ -32,7 +33,7 @@ export default function AppNav() {
             key={t.href}
             href={t.href}
             aria-current={active ? "page" : undefined}
-            className={`h-8 whitespace-nowrap rounded-full px-3 text-[13px] sm:px-3.5 font-semibold leading-8 transition ${
+            className={`h-8 whitespace-nowrap shrink-0 rounded-full px-2.5 text-[13px] min-[400px]:px-3 sm:px-3.5 font-semibold leading-8 transition ${
               active ? "bg-[var(--accent)] text-[var(--surface)]" : "text-ink-2 hover:text-ink"
             }`}
           >
