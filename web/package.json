@@ -8,7 +8,7 @@
     "data:real": "node scripts/fetch-real-data.mjs",
     "build": "next build",
     "start": "next start",
-    "test": "tsx lib/metrics.test.ts && tsx lib/yearEnd.test.ts && tsx lib/plan.test.ts",
+    "test": "tsx lib/metrics.test.ts && tsx lib/yearEnd.test.ts && tsx lib/plan.test.ts && tsx lib/invest.test.ts",
     "typecheck": "tsc --noEmit",
     "demo:data": "node scripts/demo-data.mjs"
   },

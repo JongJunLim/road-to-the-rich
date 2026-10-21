@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import * as echarts from "echarts/core";
-import { LineChart, ScatterChart } from "echarts/charts";
+import { BarChart, LineChart, ScatterChart, TreemapChart } from "echarts/charts";
 import {
   GridComponent,
   MarkLineComponent,
@@ -17,6 +17,8 @@ import type { EChartsCoreOption } from "echarts/core";
 echarts.use([
   LineChart,
   ScatterChart,
+  TreemapChart, // Investment 화면 종목 구성
+  BarChart, // Investment 화면 변동 분해 · 평가손익
   GridComponent,
   TooltipComponent,
   AxisPointerComponent,

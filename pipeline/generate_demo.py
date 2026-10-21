@@ -1,5 +1,5 @@
 """
-합성(데모) 스냅샷 생성기 — 실데이터와 같은 스키마(데이터 계약 v3)
+합성(데모) 스냅샷 생성기 — 실데이터와 같은 스키마(데이터 계약 v3, investment_product 포함)
 
 용도
   - 개발 중 화면 확인 (실제 금액이 코드·로그·스크린샷에 남지 않게)
@@ -102,6 +102,61 @@ def gen_owner(rng: random.Random, owner: str, months: list[str], ledger_months: 
     return asset_rows, inv_rows, led_rows
 
 
+# 데모 종목 (owner별) — (종목명, 비중, 성과 성향, 시작 인덱스(음수=끝에서), 종료 인덱스(None=계속))
+DEMO_PRODUCTS = {
+    "bbang": [
+        ("미국 S&P500 ETF", 0.30, 0.25, 0, None),
+        ("나스닥100 ETF", 0.22, 0.45, 0, None),
+        ("미국 배당 ETF", 0.15, 0.05, 0, None),
+        ("엔비디아", 0.08, 1.20, 0, None),
+        ("애플", 0.08, 0.15, 0, None),
+        ("금 ETF", 0.07, 0.30, 0, -8),         # 중간에 매도
+        ("2차전지 ETF", 0.10, -0.35, 0, None),
+        ("팔란티어", 0.04, 0.60, -4, None),     # 최근 신규 매수
+    ],
+    "bbyak": [
+        ("SK하이닉스", 0.25, -0.05, 0, None),
+        ("삼성전자", 0.18, 0.40, 0, None),
+        ("알파벳 Class A", 0.14, 0.90, 0, None),
+        ("마이크로소프트", 0.12, 0.55, 0, None),
+        ("테슬라", 0.08, -0.25, 0, None),
+        ("미국채 ETF", 0.15, -0.08, 0, None),
+        ("카카오페이", 0.04, -0.50, 0, None),
+        ("브로드컴", 0.04, 0.35, -3, None),
+    ],
+}
+
+
+def gen_products(rng: random.Random, inv_rows: list[dict]) -> list[dict]:
+    """투자 월 합계(investment)를 종목별로 나눔 — 종목 합계 = 화면 1 투자 금액 (원 단위까지 일치)"""
+    out: list[dict] = []
+    for owner, products in DEMO_PRODUCTS.items():
+        rows = [r for r in inv_rows if r["owner"] == owner]
+        n = len(rows)
+        tilt = {name: 0.0 for name, *_ in products}
+        for i, r in enumerate(rows):
+            active = []
+            for name, weight, perf, start, end in products:
+                s = start if start >= 0 else n + start
+                e = n if end is None else (end if end >= 0 else n + end)
+                if s <= i < e:
+                    tilt[name] += rng.gauss(perf / max(n, 1), 0.02)
+                    active.append((name, weight * rng.uniform(0.92, 1.08), max(0.05, 1 + tilt[name])))
+            if not active:
+                continue
+            wsum = sum(w for _, w, _ in active)
+            vsum = sum(w * g for _, w, g in active)
+            p_left, v_left = r["principal"], r["valuation"]
+            for k, (name, w, g) in enumerate(active):
+                last = k == len(active) - 1
+                p = p_left if last else round_to(r["principal"] * w / wsum, 1)
+                v = v_left if last else round_to(r["valuation"] * w * g / vsum, 1)
+                p_left -= p
+                v_left -= v
+                out.append({"ym": r["ym"], "owner": owner, "product": name, "principal": p, "valuation": v})
+    return sorted(out, key=lambda x: (x["ym"], x["owner"], x["product"]))
+
+
 def kr_income_tax(base: float) -> float:
     """종합소득세 누진세율(간이) — 데모용 산출세액"""
     brackets = [(14_000_000, 0.06), (50_000_000, 0.15), (88_000_000, 0.24), (150_000_000, 0.35), (float("inf"), 0.38)]
@@ -192,6 +247,8 @@ def main() -> None:
         snapshot["investment"] += ir
         snapshot["ledger"] += lr
     snapshot["year_end_monthly"], snapshot["year_end_annual"] = gen_year_end(rng, snapshot["ledger"], ledger_months)
+    # 종목별 투자 — 별도 난수로 생성해 기존 섹션(화면 1·2) 값은 바뀌지 않게
+    snapshot["investment_product"] = gen_products(random.Random(a.seed + 101), snapshot["investment"])
 
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_text(json.dumps(snapshot, ensure_ascii=False, indent=1), encoding="utf-8")

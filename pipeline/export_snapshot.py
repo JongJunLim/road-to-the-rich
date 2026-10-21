@@ -2,6 +2,7 @@
 BigQuery 마트 → snapshot JSON 내보내기 (Road To The Rich 웹앱용 데이터 계약 v3)
 
 v3: 화면 2(Year End Tax Settlement)용 year_end_monthly / year_end_annual 섹션 추가
+    + Investment 화면용 investment_product (월 × owner × 종목) — 선택 섹션이라 버전은 그대로 3
 
 실행
   pip install -r requirements.txt
@@ -58,6 +59,8 @@ SECTIONS = {
     # 화면 2 — 급여명세서·원천징수영수증이 비어 있어도 화면 1 갱신은 막지 않음
     "year_end_monthly": ("year_end_monthly.sql",   ["amount"], False),
     "year_end_annual":  ("year_end_annual.sql",    YEAR_END_ANNUAL_COLS, False),
+    # Investment 화면 — 종목별 원금·평가금 (비어 있어도 다른 화면 갱신은 막지 않음)
+    "investment_product": ("investment_product.sql", ["principal", "valuation"], False),
 }
 LEDGER_KINDS = {"income", "expense", "transfer_in", "transfer_out"}
 YEAR_END_METRICS = {"gross", "tax_paid", "net", "credit", "debit", "card_legacy"}
@@ -133,6 +136,10 @@ def validate_rows(name: str, rows: list[dict]) -> None:
         bad = {r["kind"] for r in rows} - LEDGER_KINDS
         if bad:
             raise RuntimeError(f"ledger: 알 수 없는 kind {bad}")
+    if name == "investment_product":
+        bad = [r for r in rows if not str(r.get("product") or "").strip()]
+        if bad:
+            raise RuntimeError(f"investment_product: 종목명이 빈 행 {bad[:3]}")
     if name == "year_end_monthly":
         bad = {r["metric"] for r in rows} - YEAR_END_METRICS
         if bad:

@@ -4,6 +4,7 @@
  * v2 변경: ledger 를 '월 × owner × 구분(kind) × 대분류(category)' 행으로 세분화 (카테고리 필터용)
  * v3 변경: 화면 2(Year End Tax Settlement)용 year_end_monthly / year_end_annual 추가
  *          → 두 섹션은 선택 항목이라 v2 스냅샷도 그대로 읽힘 (웹을 먼저 배포해도 화면 1은 정상)
+ * v3 추가: Investment 화면용 investment_product (월 × owner × 종목) — 선택 항목이라 버전 번호는 유지
  *
  * - 생성: pipeline/export_snapshot.py (실데이터), pipeline/generate_demo.py (데모)
  * - 모든 금액은 원 단위 정수, 월은 'YYYY-MM'
@@ -28,6 +29,15 @@ export interface AssetRow {
 export interface InvestmentRow {
   ym: string;
   owner: OwnerId;
+  principal: number;
+  valuation: number;
+}
+
+/** Investment 화면 — 월 × owner × 종목 (월 마지막 스냅샷, 같은 종목은 증권사 합산) */
+export interface InvestmentProductRow {
+  ym: string;
+  owner: OwnerId;
+  product: string;
   principal: number;
   valuation: number;
 }
@@ -80,6 +90,7 @@ export interface Snapshot {
   ledger: LedgerRow[];
   year_end_monthly?: YearEndMonthlyRow[];
   year_end_annual?: YearEndAnnualRow[];
+  investment_product?: InvestmentProductRow[];
 }
 
 /** 런타임 최소 검증 — 계약이 깨진 JSON이 화면까지 가지 않게 */
@@ -98,7 +109,7 @@ export function assertSnapshot(x: unknown): asserts x is Snapshot {
   const badKind = s.ledger!.find((r) => !kinds.has(r.kind));
   if (badKind) throw new Error(`snapshot: 알 수 없는 ledger kind ${JSON.stringify(badKind)}`);
 
-  for (const key of ["year_end_monthly", "year_end_annual"] as const) {
+  for (const key of ["year_end_monthly", "year_end_annual", "investment_product"] as const) {
     if (s[key] !== undefined && !Array.isArray(s[key])) throw new Error(`snapshot: '${key}' 는 배열이어야 합니다.`);
   }
   const metrics = new Set(["gross", "tax_paid", "net", "credit", "debit", "card_legacy"]);
@@ -106,4 +117,8 @@ export function assertSnapshot(x: unknown): asserts x is Snapshot {
     (r) => !metrics.has(r.metric) || !Number.isInteger(r.year) || r.month < 1 || r.month > 12,
   );
   if (badYe) throw new Error(`snapshot: 잘못된 year_end_monthly 행 ${JSON.stringify(badYe)}`);
+  const badIp = (s.investment_product ?? []).find(
+    (r) => typeof r.ym !== "string" || !/^\d{4}-\d{2}$/.test(r.ym) || typeof r.product !== "string" || !r.product,
+  );
+  if (badIp) throw new Error(`snapshot: 잘못된 investment_product 행 ${JSON.stringify(badIp)}`);
 }
