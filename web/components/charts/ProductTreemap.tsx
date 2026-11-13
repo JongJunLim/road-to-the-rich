@@ -28,7 +28,7 @@ function hexToRgb(hex: string): [number, number, number] | null {
   return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
 }
 
-function mix(a: string, b: string, t: number): string {
+export function mix(a: string, b: string, t: number): string {
   const ca = hexToRgb(a);
   const cb = hexToRgb(b);
   if (!ca || !cb) return t > 0.5 ? b : a;
@@ -36,7 +36,7 @@ function mix(a: string, b: string, t: number): string {
   return `rgb(${c[0]}, ${c[1]}, ${c[2]})`;
 }
 
-function luminance(color: string): number {
+export function luminance(color: string): number {
   const m = color.match(/\d+/g);
   if (!m) return 1;
   const [r, g, b] = m.slice(0, 3).map((v) => Number(v) / 255);

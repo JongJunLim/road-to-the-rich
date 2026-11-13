@@ -11,7 +11,7 @@
 --                ⚠ 이 기간 행은 지출인데도 금액이 양수로 적재되어 있어 ABS 로 집계
 --
 -- ⚠ 급여명세서에는 owner 컬럼이 없음 → 현재는 빵준(bbang) 명세서만 적재되어 있어 'bbang' 으로 고정
--- ⚠ 결제수단 → 그룹은 아래 pm_group 표 (Tableau Payment_Method_Group 과 동일하게 유지)
+-- ⚠ 결제수단 → 그룹은 BigQuery 매핑 테이블 banksalad_prd.payment_method_map
 WITH pay AS (
   SELECT
     SAFE_CAST(fiscal_year AS INT64) AS year,
@@ -42,24 +42,13 @@ ledger AS (
   FROM `{project}.{dataset}.{prefix}ledger_detail`
   WHERE txn_date IS NOT NULL AND owner IS NOT NULL AND amount IS NOT NULL
 ),
--- 결제수단 → 그룹 (Payment_Method_Group, 2026-10 기준표). 카드 지출은 Credit·Debit 만 사용
--- 새 결제수단이 생기면 이 목록에 한 줄 추가 (목록에 없으면 카드 지출에서 빠짐)
+-- 결제수단 → 그룹: BigQuery 매핑 테이블 banksalad_prd.payment_method_map (Data Guide 화면·Tableau 와 같은 기준표)
+-- 새 결제수단은 그 테이블에 한 줄 추가 (pipeline/sql/setup/payment_method_map.sql 참고). 표에 없으면 카드 지출에서 빠짐
+-- 카드 지출은 Credit·Debit 만 사용 (간편결제처럼 신용/체크가 섞인 결제수단은 Etc → 제외)
 pm_group AS (
-  SELECT pm, grp FROM UNNEST([
-    STRUCT('보통예금(IBK나라사랑통장)' AS pm, 'Account' AS grp),
-    ('불어나예탁금', 'Account'), ('세이프박스', 'Account'), ('쏠편한 입출금통장(저축예금)', 'Account'),
-    ('우체국다드림통장(베이직)', 'Account'), ('입출금통장', 'Account'), ('저축예금', 'Account'),
-    ('주택청약종합저축', 'Account'), ('토스뱅크 나눠모으기 통장', 'Account'), ('토스뱅크 통장', 'Account'),
-    ('KB나라사랑우대통장', 'Account'),
-    ('하은 전세금 (아빠)', 'Cash'), ('호수마을 전세금', 'Cash'),
-    ('네이버 현대카드', 'Credit'), ('네이버페이 간편결제', 'Credit'), ('다드림 GS칼텍스 Shine', 'Credit'),
-    ('카카오페이 간편결제', 'Credit'), ('토스 간편결제', 'Credit'), ('페이코 간편결제', 'Credit'),
-    ('현대카드 M2 Edition3 (Family)', 'Credit'), ('현대카드Z work Edition2', 'Credit'), ('IBK-Hybrid카드', 'Credit'),
-    ('KB국민 다담카드(비OTP)', 'Credit'), ('KB국민 The Easy카드', 'Credit'),
-    ('토스뱅크 체크카드', 'Debit'), ('IBK나라사랑카드(일반)', 'Debit'),
-    ('KB국민 노리2 체크카드(Global)_교통', 'Debit'), ('KB국민 노리2 체크카드(KB Pay)_교통', 'Debit'),
-    ('네이버페이 간편결제(포인트)', 'Etc'), ('카카오페이 머니', 'Etc'), ('토스머니', 'Etc')
-  ])
+  SELECT TRIM(payment_method) AS pm, ANY_VALUE(pm_group) AS grp
+  FROM `{project}.banksalad_prd.payment_method_map`
+  GROUP BY pm
 ),
 card AS (
   SELECT
