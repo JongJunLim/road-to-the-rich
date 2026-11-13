@@ -5,6 +5,8 @@
  * v3 변경: 화면 2(Year End Tax Settlement)용 year_end_monthly / year_end_annual 추가
  *          → 두 섹션은 선택 항목이라 v2 스냅샷도 그대로 읽힘 (웹을 먼저 배포해도 화면 1은 정상)
  * v3 추가: Investment 화면용 investment_product (월 × owner × 종목) — 선택 항목이라 버전 번호는 유지
+ * v3 추가: Expense Analysis 화면용 expense_item (월 × owner × 대분류 × 중분류 × 항목) — 선택 항목
+ * v3 추가: Data Guide 화면용 payment_method · payment_method_expense (결제수단 매핑 현황·지출) — 선택 항목
  *
  * - 생성: pipeline/export_snapshot.py (실데이터), pipeline/generate_demo.py (데모)
  * - 모든 금액은 원 단위 정수, 월은 'YYYY-MM'
@@ -40,6 +42,40 @@ export interface InvestmentProductRow {
   product: string;
   principal: number;
   valuation: number;
+}
+
+/** Expense Analysis 화면 — 월 × owner × 대분류 × 중분류 × 항목(description) 지출 순액 */
+export interface ExpenseItemRow {
+  ym: string;
+  owner: OwnerId;
+  main: string; // category_main (빈 값은 '미분류')
+  sub: string; // category_sub (빈 값은 '미분류')
+  item: string; // description (빈 값은 '(내용 없음)')
+  amount: number; // 양수 = 지출, 같은 달 환불이 더 크면 음수
+}
+
+/** 결제수단 그룹 — BigQuery 매핑 테이블 payment_method_map 기준, 표에 없으면 Unmapped */
+export type PaymentGroup = "Account" | "Debit" | "Credit" | "Cash" | "Etc" | "Unmapped";
+export const PAYMENT_GROUPS: PaymentGroup[] = ["Account", "Debit", "Credit", "Cash", "Etc", "Unmapped"];
+
+/** Data Guide — owner × 결제수단 사용 현황 (전체 기간) */
+export interface PaymentMethodRow {
+  owner: OwnerId;
+  pm: string;
+  group: PaymentGroup;
+  n: number; // 거래 건수 (수입·지출·이체 모두)
+  n_expense: number; // 그중 지출 건수
+  first_date: string; // YYYY-MM-DD
+  last_date: string;
+}
+
+/** Data Guide — 월 × owner × 결제수단 지출 순액 */
+export interface PaymentExpenseRow {
+  ym: string;
+  owner: OwnerId;
+  pm: string;
+  group: PaymentGroup;
+  amount: number;
 }
 
 export type LedgerKind = "income" | "expense" | "transfer_in" | "transfer_out";
@@ -91,6 +127,9 @@ export interface Snapshot {
   year_end_monthly?: YearEndMonthlyRow[];
   year_end_annual?: YearEndAnnualRow[];
   investment_product?: InvestmentProductRow[];
+  expense_item?: ExpenseItemRow[];
+  payment_method?: PaymentMethodRow[];
+  payment_method_expense?: PaymentExpenseRow[];
 }
 
 /** 런타임 최소 검증 — 계약이 깨진 JSON이 화면까지 가지 않게 */
@@ -109,7 +148,14 @@ export function assertSnapshot(x: unknown): asserts x is Snapshot {
   const badKind = s.ledger!.find((r) => !kinds.has(r.kind));
   if (badKind) throw new Error(`snapshot: 알 수 없는 ledger kind ${JSON.stringify(badKind)}`);
 
-  for (const key of ["year_end_monthly", "year_end_annual", "investment_product"] as const) {
+  for (const key of [
+    "year_end_monthly",
+    "year_end_annual",
+    "investment_product",
+    "expense_item",
+    "payment_method",
+    "payment_method_expense",
+  ] as const) {
     if (s[key] !== undefined && !Array.isArray(s[key])) throw new Error(`snapshot: '${key}' 는 배열이어야 합니다.`);
   }
   const metrics = new Set(["gross", "tax_paid", "net", "credit", "debit", "card_legacy"]);
@@ -121,4 +167,27 @@ export function assertSnapshot(x: unknown): asserts x is Snapshot {
     (r) => typeof r.ym !== "string" || !/^\d{4}-\d{2}$/.test(r.ym) || typeof r.product !== "string" || !r.product,
   );
   if (badIp) throw new Error(`snapshot: 잘못된 investment_product 행 ${JSON.stringify(badIp)}`);
+  const badEx = (s.expense_item ?? []).find(
+    (r) =>
+      typeof r.ym !== "string" ||
+      !/^\d{4}-\d{2}$/.test(r.ym) ||
+      !r.main ||
+      !r.sub ||
+      !r.item ||
+      typeof r.amount !== "number",
+  );
+  if (badEx) throw new Error(`snapshot: 잘못된 expense_item 행 ${JSON.stringify(badEx)}`);
+  const badPm = (s.payment_method ?? []).find(
+    (r) =>
+      !r.pm ||
+      !PAYMENT_GROUPS.includes(r.group) ||
+      typeof r.n !== "number" ||
+      !/^\d{4}-\d{2}-\d{2}$/.test(r.first_date ?? "") ||
+      !/^\d{4}-\d{2}-\d{2}$/.test(r.last_date ?? ""),
+  );
+  if (badPm) throw new Error(`snapshot: 잘못된 payment_method 행 ${JSON.stringify(badPm)}`);
+  const badPe = (s.payment_method_expense ?? []).find(
+    (r) => !/^\d{4}-\d{2}$/.test(r.ym ?? "") || !r.pm || !PAYMENT_GROUPS.includes(r.group) || typeof r.amount !== "number",
+  );
+  if (badPe) throw new Error(`snapshot: 잘못된 payment_method_expense 행 ${JSON.stringify(badPe)}`);
 }

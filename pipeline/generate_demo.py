@@ -1,5 +1,5 @@
 """
-합성(데모) 스냅샷 생성기 — 실데이터와 같은 스키마(데이터 계약 v3, investment_product 포함)
+합성(데모) 스냅샷 생성기 — 실데이터와 같은 스키마(데이터 계약 v3, investment_product · expense_item · payment_method 포함)
 
 용도
   - 개발 중 화면 확인 (실제 금액이 코드·로그·스크린샷에 남지 않게)
@@ -157,6 +157,151 @@ def gen_products(rng: random.Random, inv_rows: list[dict]) -> list[dict]:
     return sorted(out, key=lambda x: (x["ym"], x["owner"], x["product"]))
 
 
+# 데모 지출 구조 — 대분류: [(중분류, 비중, [항목…]), …]  (가게 이름은 합성)
+DEMO_EXPENSE_TREE = {
+    "식비": [("외식", 0.45, ["동네 국밥집", "회사 앞 백반집", "초밥 오마카세", "분식집"]),
+             ("식재료", 0.35, ["동네 마트", "온라인 장보기", "정육점"]),
+             ("배달", 0.20, ["배달앱 A", "배달앱 B"])],
+    "생활": [("생필품", 0.55, ["생활용품점", "드럭스토어"]),
+             ("의료", 0.25, ["동네 내과", "약국"]),
+             ("미용", 0.20, ["미용실"])],
+    "온라인쇼핑": [("종합몰", 0.65, ["오픈마켓 A", "오픈마켓 B", "새벽배송몰"]),
+               ("패션", 0.35, ["패션 플랫폼", "브랜드 공식몰"])],
+    "교통": [("대중교통", 0.45, ["교통카드"]),
+             ("택시", 0.25, ["택시 호출앱"]),
+             ("자동차", 0.30, ["주유소", "주차장"])],
+    "카페/간식": [("카페", 0.75, ["프랜차이즈 카페", "동네 카페", "저가 커피"]),
+              ("베이커리", 0.25, ["동네 빵집"])],
+    "주거/통신": [("관리비", 0.60, ["아파트 관리비"]),
+              ("통신", 0.40, ["휴대폰 요금", "인터넷 요금"])],
+    "문화/여가": [("구독", 0.35, ["영상 구독", "음악 구독"]),
+              ("영화/공연", 0.30, ["영화관", "공연 예매"]),
+              ("운동", 0.35, ["헬스장"])],
+    "여행/숙박": [("숙박", 0.60, ["호텔 예약", "숙박 앱"]),
+              ("항공", 0.40, ["항공권"])],
+    "결혼": [("예식", 0.55, ["웨딩홀"]),
+            ("스드메", 0.30, ["웨딩 스튜디오"]),
+            ("예물", 0.15, ["예물 매장"])],
+}
+
+
+def gen_expense_items(rng: random.Random, ledger: list[dict]) -> list[dict]:
+    """가계부 지출(대분류 월 합계)을 중분류·항목으로 나눔 — 항목 합계 = 화면 1 지출 (원 단위까지 일치)"""
+    out: list[dict] = []
+    for r in ledger:
+        if r["kind"] != "expense":
+            continue
+        tree = DEMO_EXPENSE_TREE.get(r["category"], [("기타", 1.0, ["기타 지출"])])
+        parts: list[tuple[str, str, float]] = []
+        for sub, w, items in tree:
+            picked = [i for i in items if rng.random() < 0.8] or [items[0]]
+            ws = [rng.uniform(0.4, 1.6) for _ in picked]
+            for item, iw in zip(picked, ws):
+                parts.append((sub, item, w * rng.uniform(0.6, 1.4) * iw / sum(ws)))
+        total_w = sum(p[2] for p in parts)
+        left = r["amount"]
+        for k, (sub, item, w) in enumerate(parts):
+            amt = left if k == len(parts) - 1 else round_to(r["amount"] * w / total_w, 10)
+            left -= amt
+            out.append({"ym": r["ym"], "owner": r["owner"], "main": r["category"], "sub": sub, "item": item, "amount": amt})
+        # 가끔 반품 환불 (같은 달 다른 항목에서 차감 → 합계는 그대로)
+        if r["category"] == "온라인쇼핑" and rng.random() < 0.2:
+            refund = round_to(rng.uniform(20_000, 60_000), 10)
+            out.append({"ym": r["ym"], "owner": r["owner"], "main": r["category"], "sub": "환불", "item": "반품 환불", "amount": -refund})
+            out[-2]["amount"] += refund
+    merged: dict[tuple, int] = {}
+    for x in out:
+        k = (x["ym"], x["owner"], x["main"], x["sub"], x["item"])
+        merged[k] = merged.get(k, 0) + x["amount"]
+    return [
+        {"ym": k[0], "owner": k[1], "main": k[2], "sub": k[3], "item": k[4], "amount": v}
+        for k, v in sorted(merged.items()) if v != 0
+    ]
+
+
+# 데모 결제수단 (합성 이름) — owner: [(이름, 그룹, 신용·체크 안에서의 비중)]
+DEMO_CARDS = {
+    "bbang": {"Credit": [("A카드 (신용)", 0.6), ("F카드 (가족)", 0.25), ("B카드 (신용)", 0.15)], "Debit": [("C은행 체크카드", 1.0)]},
+    "bbyak": {"Credit": [("E카드 (신용)", 0.75), ("F카드 (가족)", 0.25)], "Debit": [("G 체크카드", 1.0)]},
+}
+DEMO_OTHER = {  # 카드 외 지출이 나가는 곳
+    "bbang": {"Etc": "D페이 간편결제", "Account": "주거래 입출금통장"},
+    "bbyak": {"Etc": "D페이 간편결제", "Account": "월급 통장"},
+}
+DEMO_NO_EXPENSE = [  # 지출 없이 이체만 쓰는 계좌 등 (owner, 이름, 그룹)
+    ("bbang", "비상금 파킹통장", "Account"), ("bbang", "주택청약", "Account"), ("bbang", "전세 보증금", "Cash"),
+    ("bbyak", "증권 예탁금", "Account"), ("bbyak", "D페이 머니", "Etc"),
+]
+
+
+def gen_payment_methods(rng: random.Random, ledger: list[dict], year_end_monthly: list[dict]) -> tuple[list[dict], list[dict]]:
+    """결제수단별 지출(payment_method_expense)과 사용 현황(payment_method)
+    - 신용·체크 합계는 연말정산 화면(year_end_monthly credit·debit)과 같고, 월 합계는 화면 1 지출과 같음
+    - 'B카드'는 마지막 8개월 사용 없음(휴면), 마지막 달에 매핑 안 된 '새 간편결제'와 신규 '새 적금통장'이 생김
+    """
+    expense: dict[tuple[str, str], int] = {}
+    for r in ledger:
+        if r["kind"] == "expense":
+            k = (r["ym"], r["owner"])
+            expense[k] = expense.get(k, 0) + r["amount"]
+    card = {(f"{r['year']}-{r['month']:02d}", r["owner"], r["metric"]): r["amount"] for r in year_end_monthly if r["metric"] in ("credit", "debit")}
+    months = sorted({ym for ym, _ in expense})
+    last = months[-1]
+    dormant_from = months[-8] if len(months) >= 8 else months[0]
+
+    out: list[dict] = []
+
+    def split(ym: str, owner: str, group: str, parts: list[tuple[str, float]], total: int) -> None:
+        left = total
+        for i, (name, w) in enumerate(parts):
+            amt = left if i == len(parts) - 1 else round_to(total * w, 10)
+            left -= amt
+            if amt:
+                out.append({"ym": ym, "owner": owner, "pm": name, "group": group, "amount": amt})
+
+    for (ym, owner), total in sorted(expense.items()):
+        credit = card.get((ym, owner, "credit"), 0)
+        debit = card.get((ym, owner, "debit"), 0)
+        cards = [(n, w) for n, w in DEMO_CARDS[owner]["Credit"] if not (n.startswith("B카드") and ym >= dormant_from)]
+        wsum = sum(w for _, w in cards)
+        split(ym, owner, "Credit", [(n, w / wsum) for n, w in cards], credit)
+        split(ym, owner, "Debit", DEMO_CARDS[owner]["Debit"], debit)
+        rest = total - credit - debit
+        etc = round_to(max(0, min(rest, rng.uniform(80_000, 220_000))), 10)
+        if owner == "bbang" and ym == last:  # 매핑 테이블에 없는 새 결제수단 → Unmapped 경고 시연
+            new_pay = round_to(etc * 0.3, 10)
+            out.append({"ym": ym, "owner": owner, "pm": "새 간편결제", "group": "Unmapped", "amount": new_pay})
+            etc -= new_pay
+        if etc:
+            out.append({"ym": ym, "owner": owner, "pm": DEMO_OTHER[owner]["Etc"], "group": "Etc", "amount": etc})
+        left = rest - etc - (new_pay if owner == "bbang" and ym == last else 0)
+        if left:
+            out.append({"ym": ym, "owner": owner, "pm": DEMO_OTHER[owner]["Account"], "group": "Account", "amount": left})
+
+    # 사용 현황 — 지출이 있던 달 × 월 건수 (계좌는 이체 건수도 더함)
+    usage: dict[tuple[str, str, str], dict] = {}
+    for r in out:
+        k = (r["owner"], r["pm"], r["group"])
+        u = usage.setdefault(k, {"months": [], "n_expense": 0})
+        u["months"].append(r["ym"])
+        u["n_expense"] += rng.randint(2, 4) if r["pm"] == "새 간편결제" else rng.randint(6, 28)
+    for owner, name, group in DEMO_NO_EXPENSE:
+        usage[(owner, name, group)] = {"months": months[::3] + [last], "n_expense": 0}
+    usage[("bbyak", "새 적금통장", "Account")] = {"months": [last], "n_expense": 0}  # 신규
+    summary = []
+    for (owner, name, group), u in sorted(usage.items()):
+        ms = sorted(set(u["months"]))
+        extra = rng.randint(3, 9) * len(ms) if group in ("Account", "Cash", "Etc") else 0
+        summary.append({
+            "owner": owner, "pm": name, "group": group,
+            "n": u["n_expense"] + extra, "n_expense": u["n_expense"],
+            "first_date": f"{ms[0]}-{rng.randint(1, 9):02d}",
+            "last_date": f"{ms[-1]}-{rng.randint(18, 28):02d}",
+        })
+    summary.sort(key=lambda r: (r["owner"], -r["n"]))
+    return summary, out
+
+
 def kr_income_tax(base: float) -> float:
     """종합소득세 누진세율(간이) — 데모용 산출세액"""
     brackets = [(14_000_000, 0.06), (50_000_000, 0.15), (88_000_000, 0.24), (150_000_000, 0.35), (float("inf"), 0.38)]
@@ -249,6 +394,12 @@ def main() -> None:
     snapshot["year_end_monthly"], snapshot["year_end_annual"] = gen_year_end(rng, snapshot["ledger"], ledger_months)
     # 종목별 투자 — 별도 난수로 생성해 기존 섹션(화면 1·2) 값은 바뀌지 않게
     snapshot["investment_product"] = gen_products(random.Random(a.seed + 101), snapshot["investment"])
+    # 항목별 지출 — 별도 난수로 생성해 기존 섹션 값은 바뀌지 않게
+    snapshot["expense_item"] = gen_expense_items(random.Random(a.seed + 202), snapshot["ledger"])
+    # 결제수단 매핑 현황·지출 — 별도 난수 (기존 섹션 값은 그대로)
+    snapshot["payment_method"], snapshot["payment_method_expense"] = gen_payment_methods(
+        random.Random(a.seed + 303), snapshot["ledger"], snapshot["year_end_monthly"]
+    )
 
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_text(json.dumps(snapshot, ensure_ascii=False, indent=1), encoding="utf-8")

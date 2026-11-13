@@ -7,7 +7,9 @@ const TABS = [
   { href: "/", label: "Road To The Rich", short: "자산·가계부" },
   { href: "/year-end", label: "Year End Tax Settlement", short: "연말정산" },
   { href: "/investment", label: "Investment", short: "투자" },
+  { href: "/expense", label: "Expense Analysis", short: "지출" },
   { href: "/plan", label: "Monthly Plan", short: "고정 수지" },
+  { href: "/guide", label: "Data Guide", short: "가이드" },
 ];
 
 /** 누른 탭 옆에 작은 점 — 응답을 기다리는 동안 깜빡임 (크기 고정이라 레이아웃이 밀리지 않음) */
@@ -21,7 +23,7 @@ function PendingDot() {
   );
 }
 
-/** 화면 전환 탭 — 자산·가계부 / 연말정산 / 투자(종목별) / 월 고정 수지 계획 */
+/** 화면 전환 탭 — 자산·가계부 / 연말정산 / 투자(종목별) / 지출 분석 / 월 고정 수지 계획 / 데이터 가이드 */
 export default function AppNav() {
   const pathname = usePathname();
   return (

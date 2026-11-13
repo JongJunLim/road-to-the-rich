@@ -2,13 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import * as echarts from "echarts/core";
-import { BarChart, LineChart, ScatterChart, TreemapChart } from "echarts/charts";
+import { BarChart, HeatmapChart, LineChart, ScatterChart, TreemapChart } from "echarts/charts";
 import {
   GridComponent,
   MarkLineComponent,
   MarkPointComponent,
   TooltipComponent,
   AxisPointerComponent,
+  VisualMapComponent,
 } from "echarts/components";
 import { CanvasRenderer } from "echarts/renderers";
 import type { EChartsCoreOption } from "echarts/core";
@@ -18,7 +19,9 @@ echarts.use([
   LineChart,
   ScatterChart,
   TreemapChart, // Investment 화면 종목 구성
-  BarChart, // Investment 화면 변동 분해 · 평가손익
+  BarChart, // Investment 화면 변동 분해 · 평가손익, Expense 증감 분해
+  HeatmapChart, // Expense 화면 대분류 × 월
+  VisualMapComponent, // 히트맵 색 눈금
   GridComponent,
   TooltipComponent,
   AxisPointerComponent,
@@ -92,20 +95,32 @@ export function useThemeTokens(): ThemeTokens | null {
   return tokens;
 }
 
+/** 클릭한 데이터 정보 (Drill down 용) */
+export interface ChartClick {
+  seriesIndex?: number;
+  dataIndex: number;
+  name: string;
+  data?: unknown;
+}
+
 interface Props {
   option: EChartsCoreOption | null;
   height: number;
   ariaLabel: string;
+  onClick?: (p: ChartClick) => void;
 }
 
-export default function EChart({ option, height, ariaLabel }: Props) {
+export default function EChart({ option, height, ariaLabel, onClick }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const chartRef = useRef<echarts.ECharts | null>(null);
+  const clickRef = useRef(onClick);
+  clickRef.current = onClick;
 
   useEffect(() => {
     if (!ref.current) return;
     const chart = echarts.init(ref.current, undefined, { renderer: "canvas" });
     chartRef.current = chart;
+    chart.on("click", (p) => clickRef.current?.(p as unknown as ChartClick));
     // 카드 폭이 바뀌면(회전·창 크기·레이아웃 전환) 다시 그림
     const ro = new ResizeObserver(() => chart.resize());
     ro.observe(ref.current);
@@ -120,5 +135,12 @@ export default function EChart({ option, height, ariaLabel }: Props) {
     if (option && chartRef.current) chartRef.current.setOption(option, { notMerge: true });
   }, [option]);
 
-  return <div ref={ref} role="img" aria-label={ariaLabel} style={{ width: "100%", height }} />;
+  return (
+    <div
+      ref={ref}
+      role="img"
+      aria-label={ariaLabel}
+      style={{ width: "100%", height, cursor: onClick ? "pointer" : undefined }}
+    />
+  );
 }

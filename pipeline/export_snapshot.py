@@ -81,7 +81,14 @@ SECTIONS = {
     "year_end_annual":  ("year_end_annual.sql",    YEAR_END_ANNUAL_COLS, False),
     # Investment 화면 — 종목별 원금·평가금 (비어 있어도 다른 화면 갱신은 막지 않음)
     "investment_product": ("investment_product.sql", ["principal", "valuation"], False),
+    # Expense Analysis 화면 — 월 × owner × 대분류 × 중분류 × 항목 지출 (비어 있어도 다른 화면 갱신은 막지 않음)
+    "expense_item":     ("expense_item.sql",       ["amount"], False),
+    # Data Guide 화면 — 결제수단 매핑 현황 · 결제수단별 지출 (그룹은 BigQuery 매핑 테이블 payment_method_map)
+    "payment_method":   ("payment_method.sql",     ["n", "n_expense"], False),
+    "payment_method_expense": ("payment_method_expense.sql", ["amount"], False),
 }
+
+PM_GROUPS = {"Account", "Debit", "Credit", "Cash", "Etc", "Unmapped"}
 LEDGER_KINDS = {"income", "expense", "transfer_in", "transfer_out"}
 YEAR_END_METRICS = {"gross", "tax_paid", "net", "credit", "debit", "card_legacy"}
 
@@ -129,6 +136,11 @@ def run_section(client: bigquery.Client, name: str) -> list[dict]:
     try:
         result = job.result(timeout=QUERY_TIMEOUT_SEC)  # 무한 대기 방지
     except Exception as exc:
+        if "payment_method_map" in str(exc):
+            raise RuntimeError(
+                f"{name}: 결제수단 매핑 테이블(banksalad_prd.payment_method_map)이 없습니다 — "
+                "pipeline/sql/setup/payment_method_map.sql 로 먼저 만들어 주세요."
+            ) from exc
         raise RuntimeError(f"{name}: 쿼리 실패/시간 초과 (job_id={job.job_id}) — {exc}") from exc
     rows = []
     for r in result:
@@ -160,6 +172,17 @@ def validate_rows(name: str, rows: list[dict]) -> None:
         bad = [r for r in rows if not str(r.get("product") or "").strip()]
         if bad:
             raise RuntimeError(f"investment_product: 종목명이 빈 행 {bad[:3]}")
+    if name in ("payment_method", "payment_method_expense"):
+        bad = [r for r in rows if r.get("group") not in PM_GROUPS or not str(r.get("pm") or "").strip()]
+        if bad:
+            raise RuntimeError(f"{name}: 그룹이 Account·Debit·Credit·Cash·Etc 가 아니거나 결제수단이 빈 행 {bad[:3]}")
+        unmapped = sorted({r["pm"] for r in rows if r["group"] == "Unmapped"})
+        if unmapped and name == "payment_method":
+            print(f"  ⚠ 매핑 테이블에 없는 결제수단 {len(unmapped)}개 (웹 Data Guide 에 경고 표시): {', '.join(unmapped)}")
+    if name == "expense_item":
+        bad = [r for r in rows if not all(str(r.get(k) or "").strip() for k in ("main", "sub", "item"))]
+        if bad:
+            raise RuntimeError(f"expense_item: 분류·항목이 빈 행 {bad[:3]}")
     if name == "year_end_monthly":
         bad = {r["metric"] for r in rows} - YEAR_END_METRICS
         if bad:
